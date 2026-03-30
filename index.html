@@ -10,48 +10,84 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="keywords.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- ══════════════════════════════════════════
      SIDEBAR
 ══════════════════════════════════════════ -->
+    <button
+      id="sidebar-collapse-btn"
+      aria-label="Collapse sidebar"
+      title="Collapse sidebar"
+    ></button>
     <nav id="sidebar">
-      <div id="sidebar-header">
+      <div id="sidebar-header" style="position: relative">
         <div class="game-title">Bloodbloom</div>
         <div class="game-subtitle">Core Rules</div>
       </div>
 
       <div class="nav-section-label">Core Rules</div>
-      <a href="#core-concepts" class="nav-link active">Core Concepts</a>
-      <a href="#armies" class="nav-link sub">Armies & Squads</a>
+      <a href="#core-concepts" class="nav-link">Core Concepts</a>
+      <a href="#armies" class="nav-link sub">Armies, Squads & Models</a>
       <a href="#heroes" class="nav-link sub">Heroes</a>
+      <a href="#tags" class="nav-link sub">Tags</a>
       <a href="#cohesion" class="nav-link sub">Cohesion</a>
-      <a href="#combat-ranges" class="nav-link sub">Ranges & LoS</a>
+      <a href="#locked-combat" class="nav-link sub">Locked-in-Combat</a>
+      <a href="#cc-range" class="nav-link sub">Close-Combat Range</a>
+      <a href="#los" class="nav-link sub">Line of Sight</a>
       <a href="#cover" class="nav-link sub">Cover</a>
+
       <a href="#objectives" class="nav-link">Objectives</a>
+      <a href="#battlefield-objectives" class="nav-link sub"
+        >Battlefield Objectives</a
+      >
+      <a href="#agendas" class="nav-link sub">Agendas</a>
+
       <a href="#orders" class="nav-link">Orders</a>
+      <a href="#order-points" class="nav-link sub">Order Points</a>
       <a href="#standard-orders" class="nav-link sub">Standard Orders</a>
+
       <a href="#actions" class="nav-link">Actions & Activations</a>
-      <a href="#movement" class="nav-link sub">Movement</a>
+      <a href="#activation" class="nav-link sub">Activation</a>
+      <a href="#action" class="nav-link sub">Action</a>
+      <a href="#instant-actions" class="nav-link sub">Instant Actions</a>
+      <a href="#prepare-actions" class="nav-link sub">Prepare Actions</a>
+      <a href="#interruptible" class="nav-link sub">Interruptible</a>
       <a href="#reactions" class="nav-link sub">Reactions</a>
+
+      <a href="#movement" class="nav-link sub">Movement</a>
+      <a href="#obstacles" class="nav-link sub">Obstacles</a>
+      <a href="#pivots" class="nav-link sub">Pivots</a>
+      <a href="#flying" class="nav-link sub">Flying</a>
+
       <a href="#command-test" class="nav-link sub">Command Test</a>
 
       <div class="nav-section-label">Order of Play</div>
-      <a href="#setup" class="nav-link">Setting Up</a>
+      <a href="#setup" class="nav-link">Setting Up the Match</a>
       <a href="#rounds" class="nav-link">Rounds</a>
       <a href="#movement-phase" class="nav-link sub">Movement Phase</a>
       <a href="#deployment-phase" class="nav-link sub">Deployment Phase</a>
       <a href="#engagement-phase" class="nav-link sub">Engagement Phase</a>
       <a href="#leadership-phase" class="nav-link sub">Leadership Phase</a>
       <a href="#strategic-phase" class="nav-link sub">Strategic Phase</a>
+      <a href="#ending-match" class="nav-link sub">Ending the Match</a>
 
       <div class="nav-section-label">Combat</div>
       <a href="#combat" class="nav-link">Combat Overview</a>
+      <a href="#ranged-combat" class="nav-link sub">Ranged Combat</a>
+      <a href="#melee-combat" class="nav-link sub">Melee Combat</a>
+      <a href="#opportunity-attacks" class="nav-link sub"
+        >Opportunity Attacks</a
+      >
       <a href="#combat-activation" class="nav-link sub">Activation Step</a>
       <a href="#rolling-to-hit" class="nav-link sub">Rolling to Hit</a>
+      <a href="#modifiers" class="nav-link sub">Modifiers to Hit</a>
+      <a href="#firing-melee" class="nav-link sub">Firing into Melee</a>
       <a href="#armour" class="nav-link sub">Rolling vs Armour</a>
       <a href="#combat-resolution" class="nav-link sub">Resolution Step</a>
+      <a href="#hit-markers" class="nav-link sub">Resolving Hit Markers</a>
 
       <div class="nav-section-label">Reference</div>
       <a href="#squad-traits" class="nav-link">Squad Traits</a>
@@ -106,15 +142,10 @@
 
           <p>
             Armies in Bloodbloom are broken down into <strong>squads</strong>. A
-            squad represents a single coherent fighting force — selected for
-            activation together, with every model in the squad taking the same
-            <span class="kw"
-              >Action<span class="tooltip"
-                ><strong>Action</strong><br />Actions are selected when a squad
-                is activated and dictate what it does for the phase. Types:
-                Instant, Prepare, Reaction.</span
-              ></span
-            >.
+            squad represents a single coherent fighting force which acts as one
+            during the course of the battle. Squads are selected for activation
+            together and every model within a squad must take the same
+            <span class="kw" data-term="Action">Action</span>.
           </p>
 
           <p>
@@ -123,11 +154,16 @@
           </p>
 
           <p>
-            <strong>Models</strong> are the individual troops, tanks, and
-            commanders that make up your army. Every model in your army belongs
-            to a squad, though this may be a squad of one. Models have
-            <em>attributes</em> (unmodified statsheet values) and
-            <em>values</em> (attributes including any active modifications).
+            <strong>Models</strong> are prescribed a set of traits from their
+            statsheets. These unmodified values are referred to as the model’s
+            <em>attributes</em>. There are many factors that can modify a given
+            model’s traits, so the attributes including any modifications are
+            referred to as the model’s <em>values</em>.
+          </p>
+
+          <p>
+            When a rule refers to a model's trait, it will generally be
+            referring to that model's trait value, unless specified otherwise.
           </p>
 
           <div class="callout note">
@@ -138,36 +174,13 @@
 
           <p>
             Penalties to
-            <span class="kw"
-              >Aim<span class="tooltip"
-                ><strong>Aim</strong><br />Used as the To Hit value for Ranged
-                Attacks. Threshold may never be lower than 2+ and can exceed 7+
-                (impossible to hit).</span
-              ></span
-            >,
-            <span class="kw"
-              >Prowess<span class="tooltip"
-                ><strong>Prowess</strong><br />Used as the To Hit value for
-                Melee Attacks. Threshold may never be lower than 2+ and can
-                exceed 7+ (impossible to hit).</span
-              ></span
-            >, and
-            <span class="kw"
-              >Leadership<span class="tooltip"
-                ><strong>Leadership</strong><br />Used in Command Tests. Roll
-                3d6 and compare the result to this threshold. May never be
-                increased past 18.</span
-              ></span
-            >
+            <span class="kw" data-term="Aim">Aim</span>,
+            <span class="kw" data-term="Prowess">Prowess</span>, and
+            <span class="kw" data-term="Leadership">Leadership</span>
             values <em>increase</em> the threshold (e.g. a −2 penalty to a 3+
             Aim results in a 5+ Aim). Bonuses decrease it. Aim and Prowess
             thresholds can never fall below 2+, and
-            <span class="kw"
-              >Movement<span class="tooltip"
-                ><strong>Movement</strong><br />How far a model can move in
-                inches. Cannot be reduced below 0″.</span
-              ></span
-            >
+            <span class="kw" data-term="Movement">Movement</span>
             can never be reduced below 0″.
           </p>
 
@@ -175,38 +188,38 @@
 
           <p>
             Heroes are the champions, leaders, and specialist operatives of your
-            army — typically a squad of one powerful model with unique
-            abilities.
+            armies. Generally a hero will be a squad containing a single power
+            model, usually with unique abilities that can shape a battlefield.
           </p>
 
           <p>
-            During the <strong>Movement Phase</strong>, a Hero may join a
-            friendly squad by moving to within
-            <span class="kw"
-              >Close-Combat Range<span class="tooltip"
-                ><strong>Close-Combat Range</strong><br />Within 1″
-                horizontally, measured base-to-base, with no more than 5″ height
-                difference.</span
-              ></span
+            Heroes blur the line of squads, going where they please, when they
+            please. During the <strong>Movement Phase</strong> of a combat
+            round, a Hero may join with a squad to lead it, this is done by
+            moving the Hero to within
+            <span class="kw" data-term="Close-Combat Range"
+              >Close-Combat Range</span
             >
-            of it. A Hero may only be within Close-Combat Range of a
-            <em>single</em> friendly squad at any time — movement that would
-            bring it within range of two or more is invalid.
+            of a friendly squad. A Hero can only ever be within Close-Combat
+            range of a single squad, movement that would put a Hero within
+            Close-Combat range of two or more friendly squads is considered
+            invalid. During the <strong>Movement Phase</strong>, a Hero may join
+            a friendly squad by moving to within of it. A Hero may only be
+            within Close-Combat Range of a <em>single</em> friendly squad at any
+            time — movement that would bring it within range of two or more is
+            invalid.
           </p>
 
           <p>
-            While leading a squad, a Hero is considered part of the squad: it
-            uses the squad's attributes and shares the squad's abilities and
-            <span class="kw"
-              >tags<span class="tooltip"
-                ><strong>Tags</strong><br />Classifications like
-                <em>infantry</em>. On their own tags do nothing, but abilities
-                and rules often reference them.</span
-              ></span
-            >
-            (but not traits). It may receive Wound Markers. If the Hero is
-            destroyed, or if every other model in the squad is destroyed, it
-            counts as a destroyed squad.
+            While a Hero is leading a squad, it is considered part of the squad,
+            it uses the squad’s attributes, and shares the squad’s abilities and
+            <span class="kw" data-term="tags">tags</span>
+            (but not traits). It can be allocated Wound Markers, but if it is
+            ever destroyed then it counts as having been a destroyed squad and
+            no longer shares abilities with the squad it was leading. Likewise
+            if every model of a squad other than the Hero is destroyed, then it
+            too counts as having been a destroyed squad and the hero no longer
+            benefits from the squad’s abilities.
           </p>
 
           <div class="callout">
@@ -215,18 +228,23 @@
             Command Tests the squad makes.
           </div>
 
+          <h3 class="subsection-title" id="tags">Tags</h3>
+          Both models and squads have tags, these help classify them into
+          different groups or categories, such as infantry. On their own, tags
+          do nothing, but other rules and abilities may reference specific tags
+          to determine their effects.
+
           <h3 class="subsection-title" id="cohesion">Cohesion</h3>
 
           <p>
-            A squad is <strong>Cohesive</strong> if every model is horizontally
-            within 1″ of at least one other model in the squad, and a continuous
-            chain can be traced connecting any two models. After resolving
-            wounds, the controlling player must remove models until cohesion is
-            restored if it was broken.
+            A squad is considered <strong>Cohesive</strong> if every model is
+            horizontally within 1″ of at least one other model in the squad and
+            it is possible to trace a chain of models, each within 1″ of the
+            next, connecting any two models in the squad.
           </p>
 
-          <h3 class="subsection-title" id="combat-ranges">
-            Locked-in-Combat, Close-Combat Range & Line of Sight
+          <h3 class="subsection-title" id="locked-in-combat">
+            Locked-in-Combat
           </h3>
 
           <p>
@@ -235,30 +253,49 @@
             in that squad.
           </p>
 
-          <p>
-            <strong>Close-Combat Range:</strong> Within 1″ horizontally
-            (base-to-base) with a height difference of no more than 5″.
-          </p>
+          <h3 class="subsection-title" id="cc-range">Close-Combat Range</h3>
 
           <p>
-            <strong>Line of Sight</strong> is determined from the model's head
-            (or geometric centre if no obvious head). At least
-            <strong>25%</strong> of the target model or its base must be
-            visible. Models can see through their own squad but not through
-            other squads.
+            A model is within <strong>Close-Combat Range</strong> of another if
+            it is within 1” horizontally of an opposing model, measured from one
+            base to another, and if the height difference between the models
+            bases is no more than 5”.
+          </p>
+
+          <h3 class="subsection-title" id="line-of-sight">Line of Sight</h3>
+
+          <p>
+            Line of sight refers to a model’s ability to see another model. This
+            is generally done by assuming the position of the model’s head and
+            looking out to gauge whether or not it could see the other model. If
+            the model does not have an obvious head, then the geometric center
+            of the model may be used instead.
+          </p>
+          <p>
+            In order for a model to see another, at least 25% of the other
+            model, or its base, must be visible to the viewing model.
+          </p>
+          <p>
+            Models can see through other models in their squad, but may not see
+            through models in another squad, friendly or otherwise, unless the
+            target model can still see 25% of the target model regardless of the
+            obstruction.
           </p>
 
           <h3 class="subsection-title" id="cover">Cover</h3>
 
           <p>
-            A targeted squad has <strong>Cover</strong> against a given model if
-            ≥50% of the models in the targeted squad each have at least 25% of
-            their model obscured by terrain.
+            A targeted squad is said to have Cover against a given model if the
+            majority (greater than or equal to 50%) of the models in the
+            targeted squad each have at least 25% of their model obscured by
+            terrain.
           </p>
 
           <p>
-            Ranged Attacks made against a squad with Cover suffer a
-            <strong>−1 penalty to hit</strong>.
+            If a squad has Cover against an attacking model, then
+            <strong>Ranged Attacks</strong>
+            made against that squad by the model are made with a -1 penalty to
+            hit.
           </p>
         </div>
 
@@ -270,25 +307,45 @@
         <div class="rule-section" id="objectives">
           <h2 class="section-title">Objectives</h2>
           <p>
-            Victory Points are gained by completing Objectives. A player
-            reaching <strong>10 Victory Points</strong> wins. There are two
-            types:
+            A match of Bloodbloom is played until one player has achieved enough
+            Victory Points to win the match. Victory Points are generally gained
+            by completing Objectives. There are two main types of Objectives:
+            Battlefield Objectives & Agendas.
           </p>
 
           <h4 class="rule-title">Battlefield Objectives</h4>
           <p>
-            Shared goals both armies vie for. May be
-            <strong>Progressive</strong> (recurring VP each time conditions are
-            met) or <strong>Tactical</strong> (scored once per army). Only one
-            Battlefield Objective is revealed at match start; an additional one
-            is revealed at the end of each Strategic Phase.
+            While each army may have their own specific reasons for engaging on
+            this field of battle, there will ultimately be a shared set of goals
+            that the forces are vying for. These are Battlefield Objectives,
+            shared by both armies.
+          </p>
+          <p>
+            A Battlefield Objective may be <strong>Progressive</strong> or
+            <strong>Tactical</strong>. Tactical Objectives may only be scored
+            once by each army, allocating a set amount of Victory Points to an
+            army that scores it. Progressive Objectives will continue to give
+            Victory Points to an army that is able to complete its requirements.
+          </p>
+          <p>
+            At the beginning of a match, only a single Battlefield Objective is
+            revealed, likely the reason that the armies have come to engage in
+            the first place. As the battle progresses, new Objectives become
+            relevant. Each round, at the end of the Strategic Phase, a new
+            Battlefield Objective is revealed for the armies to engage over.
+          </p>
+          <p>
+            Generally a match will have four Battlefield Objectives, with the
+            first army to reach 10 Victory Points winning.
           </p>
 
           <h4 class="rule-title">Agendas</h4>
           <p>
-            Hidden objectives known only to your army. Each Agenda can only be
-            scored once. They are revealed to your opponent only upon scoring.
-            Routing units may not score either type of objective.
+            Unbenounced to your opponent are the hidden reasons your army has
+            chosen to fight here. These hidden objectives are your Agendas. Like
+            Battlefield Objectives, scoring these will gain you Victory Points,
+            and each Agenda can only be scored once. Agendas are hidden
+            information, only revealed to your opponent when they are scored.
           </p>
         </div>
 
@@ -301,16 +358,25 @@
           <h2 class="section-title">Orders</h2>
 
           <p>
-            Orders are special actions players can use at any time. There is no
-            limit on how often an Order can be played, but you have a finite
-            pool of <strong>Order Points (OP)</strong> each Round.
+            Well timed orders can turn the tide of battle, inspiring soldiers to
+            go above and beyond their call of duty. Orders are special actions
+            that the Players make. There is no limit to the number of times an
+            Order can be played, but Players do have a finite amount of
+            <strong>Order Points (OP)</strong> to spend each Round.
           </p>
 
           <h4 class="rule-title">Order Points</h4>
           <p>
-            At the start of each round, gain <strong>1 OP</strong>. Maximum pool
-            is <strong>5 OP</strong>; excess is lost. Additional OP may be
-            gained from strategic squads on the battlefield.
+            Order Points are gained each round based on the number of strategic
+            squads still standing on the battlefield. These squads tend to be
+            less effective at direct combat but offer the player advantage
+            through being able to perform more tactical orders.
+          </p>
+
+          <p>
+            At the start of each round, you gain 1 Order Point. At any given
+            time you may have up to 5 Order Points. Order Points generated past
+            this are lost.
           </p>
 
           <h3 class="subsection-title" id="standard-orders">Standard Orders</h3>
@@ -352,7 +418,7 @@
             </div>
             <div class="rc-body">
               <p>
-                After a squad has finished their action but before you end your
+                After a friendly squad has finished their action but before you end your
                 turn, you may activate another squad.
               </p>
             </div>
@@ -364,12 +430,8 @@
             <div class="rc-body">
               <p>
                 Before a squad takes a
-                <span class="kw"
-                  >Command Test<span class="tooltip"
-                    ><strong>Command Test</strong><br />Roll 3d6 vs. the squad's
-                    Leadership value. Equal to or above = pass.</span
-                  ></span
-                >, they automatically pass instead.
+                <span class="kw" data-term="Command Test">Command Test</span>,
+                they automatically pass instead.
               </p>
             </div>
           </div>
@@ -434,12 +496,7 @@
             Interruptible Prepare Action is targeted by a Ranged Attack, after
             the attack concludes the squad must make a Command Test with a −1
             penalty per Hit scored. Failure, or becoming
-            <span class="kw"
-              >Locked-in-Combat<span class="tooltip"
-                ><strong>Locked-in-Combat</strong><br />A squad is
-                locked-in-combat when any of its models are within Close-Combat
-                Range of an opposing model.</span
-              ></span
+            <span class="kw" data-term="Locked-in-Combat">Locked-in-Combat</span
             >, replaces the reminder marker with an Activation Token.
           </p>
 
@@ -505,13 +562,7 @@
               </tr>
               <tr>
                 <td>
-                  <span class="kw"
-                    >Hero<span class="tooltip"
-                      ><strong>Hero</strong><br />A Hero leading the squad
-                      contributes a +2 bonus to Command Tests (overrides the
-                      Sergeant bonus).</span
-                    ></span
-                  >
+                  <span class="kw" data-term="Hero">Hero</span>
                   leading the squad
                 </td>
                 <td>+2 to Command Tests</td>
@@ -570,12 +621,8 @@
               <p>
                 Each model may move up to its movement value. Models may not
                 pass through or end within
-                <span class="kw"
-                  >Close-Combat Range<span class="tooltip"
-                    ><strong>Close-Combat Range</strong><br />Within 1″
-                    horizontally, base-to-base, with ≤5″ height
-                    difference.</span
-                  ></span
+                <span class="kw" data-term="Close-Combat Range"
+                  >Close-Combat Range</span
                 >
                 of an opposing squad.
               </p>
@@ -592,13 +639,9 @@
             <div class="rc-body">
               <p>
                 The squad takes a
-                <span class="kw"
-                  >Command Test<span class="tooltip"
-                    ><strong>Command Test</strong><br />Roll 3d6 vs. Leadership
-                    threshold. Pass: equal to or above. Fail: below.</span
-                  ></span
-                >. On failure, they cannot move. On success, each model moves up
-                to its movement value, ending outside Close-Combat Range of all
+                <span class="kw" data-term="Command Test">Command Test</span>.
+                On failure, they cannot move. On success, each model moves up to
+                its movement value, ending outside Close-Combat Range of all
                 opposing squads.
               </p>
             </div>
@@ -1024,12 +1067,8 @@
           <p>
             When targeting a squad Locked-in-Combat with a friendly squad, the
             attacking squad must first pass a
-            <span class="kw"
-              >Command Test<span class="tooltip"
-                ><strong>Command Test</strong><br />Roll 3d6 vs. Leadership
-                threshold. Equal to or above = pass.</span
-              ></span
-            >. On failure, another eligible target must be chosen (not
+            <span class="kw" data-term="Command Test">Command Test</span>. On
+            failure, another eligible target must be chosen (not
             Locked-in-Combat with friendlies). If none exist, the squad ends its
             activation without attacking.
           </p>
