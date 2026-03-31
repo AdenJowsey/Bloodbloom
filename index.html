@@ -31,7 +31,7 @@
       <div class="nav-section-label">Core Rules</div>
       <a href="#core-concepts" class="nav-link">Core Concepts</a>
       <a href="#armies" class="nav-link sub">Armies, Squads & Models</a>
-      <a href="#heroes" class="nav-link sub">Heroes</a>
+      <a href="#heroes" class="nav-link sub2">Heroes</a>
       <a href="#tags" class="nav-link sub">Tags</a>
       <a href="#cohesion" class="nav-link sub">Cohesion</a>
       <a href="#locked-combat" class="nav-link sub">Locked-in-Combat</a>
@@ -135,10 +135,10 @@
         <!-- ════════════════════════════════════════
        SECTION 1 — CORE CONCEPTS
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="core-concepts">
-          <h2 class="section-title">Core Concepts</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="core-concepts">Core Concepts</h2>
 
-          <h3 class="subsection-title" id="armies">Armies, Squads & Models</h3>
+          <h3 class="subsection-title" id="armies">Armies</h3>
 
           <p>
             Armies in Bloodbloom are broken down into <strong>squads</strong>. A
@@ -148,10 +148,14 @@
             <span class="kw" data-term="Action">Action</span>.
           </p>
 
+          <h4 class="rule-title" id="squads">Squads</h4>
+
           <p>
             Squads from your army are considered <strong>friendly</strong>;
             squads from another player's army are <strong>opposing</strong>.
           </p>
+
+          <h4 class="rule-title" id="models">Models</h4>
 
           <p>
             <strong>Models</strong> are prescribed a set of traits from their
@@ -166,7 +170,7 @@
             referring to that model's trait value, unless specified otherwise.
           </p>
 
-          <div class="callout note">
+          <div class="callout">
             <div class="callout-label">Example</div>
             A model may have a Movement <em>attribute</em> of 6″, but including
             a Wound Marker penalty it has a Movement <em>value</em> of 4″.
@@ -184,7 +188,7 @@
             can never be reduced below 0″.
           </p>
 
-          <h3 class="subsection-title" id="heroes">Heroes</h3>
+          <h4 class="rule-title" id="heroes">Heroes</h4>
 
           <p>
             Heroes are the champions, leaders, and specialist operatives of your
@@ -222,13 +226,13 @@
             benefits from the squad’s abilities.
           </p>
 
-          <div class="callout">
+          <div class="callout note">
             <div class="callout-label">Note</div>
             If a Hero is leading a squad, add a <strong>+2 bonus</strong> to any
             Command Tests the squad makes.
           </div>
 
-          <h3 class="subsection-title" id="tags">Tags</h3>
+          <h4 class="rule-title" id="tags">Tags</h4>
           Both models and squads have tags, these help classify them into
           different groups or categories, such as infantry. On their own, tags
           do nothing, but other rules and abilities may reference specific tags
@@ -253,7 +257,7 @@
             in that squad.
           </p>
 
-          <h3 class="subsection-title" id="cc-range">Close-Combat Range</h3>
+          <h4 class="rule-title" id="close-combat-range">Close-Combat Range</h4>
 
           <p>
             A model is within <strong>Close-Combat Range</strong> of another if
@@ -282,7 +286,7 @@
             obstruction.
           </p>
 
-          <h3 class="subsection-title" id="cover">Cover</h3>
+          <h4 class="rule-title" id="cover">Cover</h4>
 
           <p>
             A targeted squad is said to have Cover against a given model if the
@@ -304,8 +308,8 @@
         <!-- ════════════════════════════════════════
        SECTION 2 — OBJECTIVES
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="objectives">
-          <h2 class="section-title">Objectives</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="objectives">Objectives</h2>
           <p>
             A match of Bloodbloom is played until one player has achieved enough
             Victory Points to win the match. Victory Points are generally gained
@@ -313,7 +317,9 @@
             Battlefield Objectives & Agendas.
           </p>
 
-          <h4 class="rule-title">Battlefield Objectives</h4>
+          <h3 class="rule-title" id="battlefield-objectives">
+            Battlefield Objectives
+          </h3>
           <p>
             While each army may have their own specific reasons for engaging on
             this field of battle, there will ultimately be a shared set of goals
@@ -339,7 +345,7 @@
             first army to reach 10 Victory Points winning.
           </p>
 
-          <h4 class="rule-title">Agendas</h4>
+          <h3 class="rule-title" id="agendas">Agendas</h3>
           <p>
             Unbenounced to your opponent are the hidden reasons your army has
             chosen to fight here. These hidden objectives are your Agendas. Like
@@ -354,8 +360,8 @@
         <!-- ════════════════════════════════════════
        SECTION 3 — ORDERS
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="orders">
-          <h2 class="section-title">Orders</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="orders">Orders</h2>
 
           <p>
             Well timed orders can turn the tide of battle, inspiring soldiers to
@@ -365,7 +371,7 @@
             <strong>Order Points (OP)</strong> to spend each Round.
           </p>
 
-          <h4 class="rule-title">Order Points</h4>
+          <h3 class="rule-title" id="order-points">Order Points</h3>
           <p>
             Order Points are gained each round based on the number of strategic
             squads still standing on the battlefield. These squads tend to be
@@ -379,7 +385,7 @@
             this are lost.
           </p>
 
-          <h3 class="subsection-title" id="standard-orders">Standard Orders</h3>
+          <h4 class="rule-title" id="standard-orders">Standard Orders</h4>
           <p>
             The following Orders are available to all players regardless of
             faction.
@@ -418,8 +424,8 @@
             </div>
             <div class="rc-body">
               <p>
-                After a friendly squad has finished their action but before you end your
-                turn, you may activate another squad.
+                After a friendly squad has finished their action but before you
+                end your turn, you may activate another squad.
               </p>
             </div>
           </div>
@@ -465,87 +471,134 @@
         <!-- ════════════════════════════════════════
        SECTION 4 — ACTIONS & ACTIVATIONS
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="actions">
-          <h2 class="section-title">Actions &amp; Activations</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="activations">Activations</h2>
 
           <p>
-            When a squad is selected during the
-            <strong>Activation Step</strong> of a phase, it is
-            <em>activated</em> until the end of the phase (or until readied by a
-            rule). It must be assigned a relevant Action it meets the
-            requirements for. An <strong>Activation Token</strong> is placed
-            next to the squad after its Action concludes. An activated squad
-            cannot be selected again until its Activation Token is removed.
+            When a squad is selected for activation during the Activation Step
+            of a phase, then they are considered to be activated until the end
+            of the phase (or if any rule would ready them before then).
           </p>
-
-          <h4 class="rule-title">Instant Actions</h4>
           <p>
-            Resolved immediately upon activation with generally few
-            requirements.
+            Once selected for activation, the squad must be assigned a relevant
+            action from the phase (or other valid source) that they meet the
+            requirements for. An Activation Token should be placed next to the
+            squad after it has concluded its selected Action, unless told
+            otherwise.
           </p>
-
-          <h4 class="rule-title">Prepare Actions</h4>
           <p>
-            Do not resolve immediately — they set a squad up for a later payoff.
-            A reminder marker is placed (functionally as an Activation Token)
-            and replaced with an Activation Token when the action resolves.
+            An activated squad may never be selected again for activation until
+            it has first removed its current Activation Token and thus been
+            readied.
           </p>
 
+          <h3 class="section-title" id="instant-actions">Instant Actions</h3>
           <p>
-            <strong>Interruptible:</strong> If a squad performing an
-            Interruptible Prepare Action is targeted by a Ranged Attack, after
-            the attack concludes the squad must make a Command Test with a −1
-            penalty per Hit scored. Failure, or becoming
-            <span class="kw" data-term="Locked-in-Combat">Locked-in-Combat</span
-            >, replaces the reminder marker with an Activation Token.
+            Instant Actions are the most straightforward type of action,
+            generally having view requirements and being resolved immediately.
           </p>
 
-          <h4 class="rule-title">Reactions</h4>
+          <h3 class="section-title" id="prepare-actions">Prepare Actions</h3>
           <p>
-            Declared on <em>another player's turn</em> in response to a trigger.
-            The squad is considered activated upon declaring the Reaction. Each
-            Reaction specifies a <em>trigger</em> (what causes it) and a
-            <em>timing</em> (when it resolves).
+            Unlike Instant Actions, Prepare Actions generally do not resolve
+            their effect immediately, but instead set a squad up to complete
+            something at a later point in the round. This will often be to their
+            advantage if what they prepare for comes to fruition.
+          </p>
+          <p>
+            Prepare Actions will often come with a reminder marker that marks
+            the squad as activated but can then be replaced with an Activation
+            Token when the action is resolved.
           </p>
 
+          <h4 class="rule-title" id="interruptible">Interruptible</h4>
+          <p>
+            Many Prepare Actions require concentration from the squad and are
+            therefore interruptible by the opponent. If a squad is performing an
+            Interruptible Prepare Action and they are targeted by a Ranged
+            Attack, then after the attack is concluded, the squad must make a
+            Command Test with a -1 penalty for each Hit that was scored against
+            them (Note that the hit does not necessarily have to produce a Hit
+            Marker). If they fail this, or the activated squad ever becomes
+            locked-in-combat, replace their relevant reminder marker with an
+            Activation Token.
+          </p>
+
+          <h3 class="section-title" id="reactions">Reactions</h3>
+          <p>
+            Reactions can only be done in response to a trigger. A reaction is
+            different from the other two action types as they can be declared on
+            another player’s turn. Reactions have two additional descriptions, a
+            <em>trigger</em> and a <em>timing</em>.
+          </p>
+          <p>
+            The <em>trigger</em> specifies when the reaction may be declared,
+            generally it will be after an opposing squad does something, in
+            which case that squad is the triggering squad. Generally, if you do
+            something that may give your opponent an opportunity to use a
+            Reaction, you should give them time to declare it.
+          </p>
+          <p>
+            The <em>timing</em> specifies when the reaction should be resolved.
+            Generally, this will be immediately after the triggering Action has
+            been concluded, but sometimes it may vary. Once the Reaction has
+            been declared, the squad is considered activated even before the
+            Reaction is resolved (and as such can not be used for another
+            Reaction).
+          </p>
           <h3 class="subsection-title" id="movement">Movement</h3>
           <p>
-            When instructed to move, a model may move in a series of
-            unobstructed straight lines up to its Movement value. It may not
-            move through terrain or models not in its squad unless specified.
+            When a model is instructed to move, you may move it in a series of
+            unobstructed straight lines. A model may not move through terrain or
+            other models that are not in its squad unless otherwise specified.
           </p>
 
-          <h4 class="rule-title">Obstacles</h4>
+          <h4 class="rule-title" id="obstacles">Obstacles</h4>
           <p>
-            Terrain <strong>≤ 2″ tall</strong> is an Obstacle — models may move
-            through it at the cost of <strong>−2″ movement</strong>. Terrain
-            taller than 2″ cannot be moved through, but may be climbed by models
-            with the <span class="tag">infantry</span> tag, provided they have
-            sufficient movement to traverse the vertical and horizontal distance
-            and can fit their base on the surface.
+            Terrain smaller than 2” tall are considered Obstacles, and may be
+            moved through by models at the cost of lowering their Movement value
+            by 2” for the duration of that movement.
           </p>
 
-          <h4 class="rule-title">Pivots</h4>
           <p>
-            Models on non-circular bases may rotate during movement at a cost of
-            <strong>−1″ per rotation</strong>, always about the geometric centre
-            of the base.
+            Terrain larger than 2” can not be moved through, though it may be
+            climbed by models with the infantry tag. For a model to climb a
+            piece of vertical terrain, it must have enough movement to traverse
+            the vertical distance, in addition to any horizontal movement
+            required so that its entire base can fit onto the new surface. If
+            the surface does not have enough room for the entire base of the
+            model to fit, then the model may not climb that terrain.
           </p>
 
-          <h4 class="rule-title">Flying</h4>
+          <h4 class="rule-title" id="pivots">Pivots</h4>
           <p>
-            Models with the <span class="tag">Flying</span> trait move through
-            the air in 3-dimensional space. They must finish on a surface that
-            can fit their entire base. Measure direct 3D movement; when flying
-            up, measure to the surface edge then add horizontal movement.
+            Models that do not have circular bases may rotate during their
+            movement, however each rotation lowers their Movement value by 1”
+            for the duration of that movement. Rotations are always about the
+            geometric center of a model’s base.
+          </p>
+
+          <h4 class="rule-title" id="flying">Flying</h4>
+          <p>
+            Models with the Flying trait may move through the air, so long as
+            they finish their movement on a surface that can entirely fit their
+            base. When moving through the air, measure the direct 3-dimensional
+            movement of the model through the air.
+          </p>
+          <p>
+            When flying up to a higher surface, the model should measure its
+            3-dimensional movement to the edge of the surface, then whatever
+            horizontal movement is required so that the model can fit its entire
+            base on the surface.
           </p>
 
           <h3 class="subsection-title" id="command-test">Command Test</h3>
           <p>
-            Roll <strong>3d6</strong> and compare the result to the squad's
-            Leadership value, applying any bonuses or penalties. If the result ≥
-            Leadership value, the squad <strong>passes</strong>; otherwise it
-            <strong>fails</strong>.
+            When a squad is instructed to make a Command Test, you must roll 3d6
+            and compare the result to its Leadership value, adding any bonuses
+            or penalties. If the final result is larger than or equal to the
+            squad’s Leadership value, then the squad passes the Command Test,
+            otherwise, it fails.
           </p>
 
           <table class="rule-table">
@@ -576,37 +629,54 @@
         <!-- ════════════════════════════════════════
        SECTION 5 — ORDER OF PLAY
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="rounds">
-          <h2 class="section-title">Order of Play</h2>
-
+        <div class="rule-section">
+          <h2 class="section-title" id="order-of-play">Order of Play</h2>
           <p>
-            Rounds proceed through sequential phases, each divided into an
-            <strong>Activation Step</strong> and a
-            <strong>Resolution Step</strong>. Starting with the player holding
-            the <strong>Initiative Token</strong>, players alternate activating
-            squads one at a time.
+            Rounds in Bloombloom are played through in sequential phases. Phases
+            are often into step Activations, and Resolutions. Starting with the
+            Activation Step, players take alternating turns activating their
+            squads, beginning with the player with the Initiative Token. In each
+            phase, unless told otherwise, players activate a single squad and
+            resolve an Action before then letting the turn pass to the other
+            player.
           </p>
-
           <p>
-            If one player runs out of unactivated squads, the other player
-            continues activating sequentially. Once both players have exhausted
-            their squads, the phase enters its Resolution Step: Hit Markers are
-            resolved, Activation Tokens removed, and the next phase begins.
+            Players continue alternatively activating squads until they have no
+            more unactivated squads available, in which case, a player with
+            unactivated squads available may continue sequentially activating
+            them until they too have no more unactivated squads available.
+          </p>
+          <p>
+            Once both players have activated all of their squads, the phase
+            moves into the Resolution Step, where any unresolved outcomes (Such
+            as Hit Markers) of the previous step may be applied. Once all
+            unresolved outcomes have been settled, players may ready their
+            squads by removing their Activation Tokens and proceeding to the
+            next phase. If, at the end of a round, no player has won yet, then a
+            new round begins starting from the Movement Phase.
           </p>
 
           <!-- MOVEMENT PHASE -->
           <h3 class="subsection-title" id="movement-phase">Movement Phase</h3>
           <p>
-            Players position their squads across the battlefield. Available
-            actions during the Activation Step:
+            During the Movement Phase, players seek to position their squads
+            around the battlefield in order to out manoeuvre their opponent.
           </p>
+          <h4 class="rule-title" id="movement-activation-step">
+            Activation Step
+          </h4>
+          During this step of the Movement Phase, the following Actions are
+          available:
 
           <div class="rule-card">
             <div class="rc-name">
               Hold Fast <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-body">
-              <p>The squad makes no movement. Each model remains in place.</p>
+              <p>
+                The activated squad makes no movement and each model remains in
+                place.
+              </p>
             </div>
           </div>
 
@@ -619,12 +689,9 @@
             </div>
             <div class="rc-body">
               <p>
-                Each model may move up to its movement value. Models may not
-                pass through or end within
-                <span class="kw" data-term="Close-Combat Range"
-                  >Close-Combat Range</span
-                >
-                of an opposing squad.
+                Each model in the activated squad may make a movement up to its
+                movement value in inches. They may not pass, nor end this
+                movement, within Close-Combat range of an opposing squad.
               </p>
             </div>
           </div>
@@ -634,15 +701,16 @@
               Regroup <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad must be Locked-in-Combat.
+              <strong>Requirements:</strong> The activated squad must be
+              locked-in-combat.
             </div>
             <div class="rc-body">
               <p>
-                The squad takes a
-                <span class="kw" data-term="Command Test">Command Test</span>.
-                On failure, they cannot move. On success, each model moves up to
-                its movement value, ending outside Close-Combat Range of all
-                opposing squads.
+                The squad must take a Command Test. Failing this, the squad is
+                unable to move. If they succeed the Command Test, then each
+                model in the squad must make a movement up to its movement value
+                in inches, ending its movement outside of Close-Combat range of
+                any opposing squad.
               </p>
             </div>
           </div>
@@ -652,53 +720,87 @@
               Pounce <span class="rc-type reaction">Reaction</span>
             </div>
             <div class="rc-meta">
-              <strong>Trigger:</strong> An opposing player Regroups or Routes a
-              squad Locked-in-Combat with one of your unactivated squads.<br /><strong
-                >Timing:</strong
-              >
-              After the opposing squad's Command Test, before any movement.
+              <strong>Trigger:</strong> Another player Regroups or Routes a
+              squad that is locked-in-combat one or more of your unactivated
+              squads. <br /><strong>Timing:</strong>
+              After the opposing squad has taken any Command Test, but before
+              moving (or not moving) any models.
             </div>
             <div class="rc-body">
               <p>
-                Your Locked-in-Combat squad makes a
-                <strong>Melee Opportunity Attack</strong> against the triggering
-                squad. Multiple squads may Pounce the same trigger; all must be
-                declared before any attack is resolved.
+                Your locked-in-combat squad makes a Melee Opportunity Attack
+                against the triggering squad.
               </p>
             </div>
+            <div class="callout note">
+              <div class="callout-label">Note</div>
+              There is no limit to how many squads may take the Pounce action
+              per an opposing Regroup or Route. If a squad triggers this
+              reaction while being locked-in-combat with two opposing squads,
+              then both opposing squads may be selected to Pounce. Though both
+              must be selected before resolving any attack.
+            </div>
           </div>
+
+          <h4 class="rule-title" id="movement-resolution-step">
+            Resolution Step
+          </h4>
+          Any Hit Markers generated during this phase may now be allocated and
+          models destroyed. This can be done simultaneously, or following an
+          alternating squad resolution starting with the player with the
+          Initiative Token if the order matters.
 
           <!-- DEPLOYMENT PHASE -->
           <h3 class="subsection-title" id="deployment-phase">
             Deployment Phase
           </h3>
           <p>
-            Reinforcements arrive; troops embark and disembark from transports.
-            Squads are not activated in this phase. Players alternate through
-            the <strong>Embarking Step</strong> then the
-            <strong>Reinforcing Step</strong>.
+            In the Deployment Phase, reinforcements flood into the battlefield
+            and troops ready themselves into or from transports. Squads are not
+            activated in this phase and players take turns going through the
+            Embarking Step then the Reinforcing Step.
           </p>
 
-          <h4 class="rule-title">Transports</h4>
+          <h4 class="rule-title" id="embarking-step">Embarking Step</h4>
           <p>
-            Models with the <span class="tag">Transport</span> trait may carry
-            other models. Embarked models cannot be targeted, but may make
-            Ranged Attacks under certain conditions. A transport has a specific
-            tag requirement and a capacity (sum of embarked model sizes).
+            During this step, players alternate declaring if they will Embark or
+            Disembark any squads from transports. If on a player’s turn, they
+            decline to either Embark or Disembark, then they are considered to
+            have passed for this step. Once both players are passed move onto
+            the next step.
           </p>
 
+          <h4 class="rule-title" id="transports">Transports</h4>
+          <p>
+            Models with the Transport trait can allow other models to be stored
+            inside them. During this time, those models can not be targeted with
+            actions or abilities, but may make Ranged Attacks under certain
+            conditions.
+          </p>
+          <p>
+            A given transport will have a specific tag (or tags) and a capacity.
+            The transport may only contain a number of models whose combined
+            sizes add up to its capacity. A model can only Embark into a
+            transport if it has the tag specified and if their entire squad also
+            Embarks.
+          </p>
+          <p>
+            A given squad can either Embark or Disembark in the Embarking Step
+            of the Deployment Phase, but not both.
+          </p>
           <div class="rule-card">
             <div class="rc-name">
               Embark <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Every model wholly within 3″ of
-              target transport; squad not Locked-in-Combat.
+              <strong>Requirements:</strong> Every model within a squad must be
+              wholly within 3” of a target transport and the squad may not be
+              locked-in-combat.
             </div>
             <div class="rc-body">
               <p>
-                Remove all models (and their Markers) from the board — they are
-                now inside the transport.
+                Remove all models, and any of their Markers, from the board and
+                place them aside. They are now within the target transport.
               </p>
             </div>
           </div>
@@ -708,32 +810,62 @@
               Disembark <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad currently within a transport.
+              <strong>Requirements:</strong> The activating squad is currently
+              within a given transport.
             </div>
             <div class="rc-body">
               <p>
-                Place all models wholly within 3″ of the transport. Any opposing
-                model entering Close-Combat Range may make a
-                <strong>Melee Opportunity Attack</strong> against the placed
-                squad.
+                Place all models from the activated squad wholly within 3” of
+                the transport. If any models can not be placed wholly within 3"
+                for whatever reason, they are destroyed instead. After placing
+                all models of a squad, if you had placed any models into
+                Close-Combat range of opposing models, those models may make a
+                Melee Opportunity Attack against the placed squad.
               </p>
             </div>
           </div>
 
           <div class="callout warning">
             <div class="callout-label">Transport Destroyed</div>
-            If a transport is destroyed while carrying troops, roll 1d3 for each
-            embarked model before removing it. On a 2+, generate a Wound Marker
-            for the squad.
+            If a transport is destroyed while carrying squads, before removing
+            the transport model from the board, Disembark any squads and roll a
+            1d3 for each model within those squads. On a result of 2 or less, a
+            Wound Marker is generated for that squad.
           </div>
 
-          <!-- ENGAGEMENT PHASE -->
-          <h3 class="subsection-title" id="engagement-phase">
-            Engagement Phase
-          </h3>
+          <h4 class="rule-title" id="reinforcing-step">Reinforcing Step</h4>
           <p>
-            Squads fight for tactical superiority through ranged volleys and
-            brazen charges.
+            During this step, players alternate declaring if they will Deploy
+            any squads from their reinforcements. If on a player’s turn, they
+            decline to Deploy a squad from their reinforcements, then they are
+            considered to have passed for this step. Once both players are
+            passed move onto the next phase.
+          </p>
+
+          <h4 class="rule-title" id="deployment-resolution-step">
+            Resolution Step
+          </h4>
+          <p>
+            Any Hit Markers generated during this phase may now be allocated and
+            models destroyed. This can be done simultaneously, or following an
+            alternating squad resolution starting with the player with the
+            Initiative Token if the order matters.
+          </p>
+
+          <!-- ENGAGEMENT PHASE -->
+          <h3 class="section-title" id="engagement-phase">Engagement Phase</h3>
+          <p>
+            During the Engagement Phase, players seek to battle for tactical
+            superiority whether that be through well timed volleys or brazen
+            charges.
+          </p>
+
+          <h4 class="rule-title" id="engagement-activation-step">
+            Activation Step
+          </h4>
+          <p>
+            During this step of the Engagement Phase, the following Actions are
+            available to an unactivated squad:
           </p>
 
           <div class="rule-card">
@@ -741,11 +873,14 @@
               Fire! <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad not Locked-in-Combat; must
-              have at least one eligible ranged weapon.
+              <strong>Requirements:</strong> The activated squad may not be
+              locked-in-combat and must have at least one eligible ranged
+              weapon.
             </div>
             <div class="rc-body">
-              <p>Each model may perform a <strong>Ranged Attack</strong>.</p>
+              <p>
+                Each model in the activated squad may perform a Ranged Attack.
+              </p>
             </div>
           </div>
 
@@ -754,11 +889,13 @@
               Charge! <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad must be Locked-in-Combat;
-              must have at least one melee weapon.
+              <strong>Requirements:</strong> The activated squad must be
+              locked-in-combat and must have at least one melee weapon.
             </div>
             <div class="rc-body">
-              <p>Each model may perform a <strong>Melee Attack</strong>.</p>
+              <p>
+                Each model in the activated squad may perform a Melee Attack.
+              </p>
             </div>
           </div>
 
@@ -767,15 +904,17 @@
               Dash <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad not Locked-in-Combat. Limit:
-              Only one Melee Attack per squad from this action.
+              <strong>Requirements:</strong> The activated squad may not be
+              locked-in-combat.<br />
+              <strong>Limit:</strong> Only one Melee Attack per squad can be
+              performed as the result of this action.
             </div>
             <div class="rc-body">
               <p>
-                Each model may move up to its movement value. If this brings the
-                squad into Close-Combat Range with an opposing squad, they may
-                make a <strong>Melee Attack</strong> with a
-                <strong>+1 to hit</strong> bonus.
+                Each model in the activated squad may make a movement up to its
+                movement value in inches. If the activated squad moves into
+                Close-Combat range with an opposing squad, they may make a Melee
+                Attack with a +1 to hit bonus.
               </p>
             </div>
           </div>
@@ -786,17 +925,24 @@
               <span class="rc-type prepare">Prepare (Interruptible)</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad must be Locked-in-Combat;
-              must have at least one melee weapon.
+              <strong>Requirements:</strong> The activated squad must be
+              locked-in-combat and must have at least one melee weapon.
             </div>
             <div class="rc-body">
               <p>
-                Place a Readied Marker next to the squad. While active, if the
-                squad becomes Locked-in-Combat with an opposing squad, replace
-                the marker with an Activation Token and immediately take
-                <strong>Charge!</strong> with a
-                <strong>+1 to hit</strong> bonus.
+                A Readied Marker is placed next to the activated squad, this
+                marker functions as an Activation Token and the squad counts as
+                being activated this step. While the squad has this Readied
+                Marker, if it ever becomes locked-in-combat with an opposing
+                squad, it may replace the Readied Marker with an Activation
+                Token and then take the Charge! action with a +1 to hit bonus.
               </p>
+            </div>
+            <div class="callout note">
+              <div class="callout-label">Note</div>
+              Being locked-in-combat does not prevent this from being used (as
+              would normally be in case with an Interruptible action), so long
+              as it is used immediately after entering locked-in-combat.
             </div>
           </div>
 
@@ -806,16 +952,26 @@
               <span class="rc-type prepare">Prepare (Interruptible)</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad not Locked-in-Combat; must
-              have at least one ranged weapon.
+              <strong>Requirements:</strong> The activated squad may not be
+              locked-in-combat and must have at least one ranged weapon.
             </div>
             <div class="rc-body">
               <p>
-                Place an Overwatch Marker. While active, the squad may use the
-                <strong>Snapshot</strong> reaction but makes a normal Ranged
-                Attack instead of an Opportunity Attack. Resolving the Snapshot
-                replaces the marker with an Activation Token.
+                An Overwatch Marker is placed next to the activated squad, this
+                marker functions as an Activation Token and the squad counts as
+                being activated this step. While the squad has this Overwatch
+                Marker, at any point before the end of the phase, the squad may
+                also take the Snapshot reaction, though it makes a normal Ranged
+                Attack instead of a Ranged Opportunity Attack, while resolving
+                that reaction. If this reaction is resolved, the Overwatch
+                Marker is replaced with an Activation Token.
               </p>
+            </div>
+            <div class="callout note">
+              <div class="callout-label">Note</div>
+              The Snapshot reaction may be made even if the triggering squad’s
+              movement results in the activated squad becoming locked-in-combat.
+              See the Snapshot reaction’s notes for more details.
             </div>
           </div>
 
@@ -825,15 +981,18 @@
               <span class="rc-type prepare">Prepare (Interruptible)</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Squad wholly within your deployment
-              area.
+              <strong>Requirements:</strong> The activated squad must be wholly
+              within your deployment area.
             </div>
             <div class="rc-body">
               <p>
-                Place a Retreat Marker. At the end of the Resolution Step, if
-                the squad is still wholly within your deployment area, you may
-                remove all remaining models — add them as a new squad to your
-                reinforcements with all Wound and status Markers removed.
+                A Retreat Marker is placed next to the activated squad, this
+                marker functions as an Activation Token and the squad counts as
+                being activated at this step. At the end of the Resolution Step
+                of this phase, if this squad is still wholly within your
+                deployment area, you may remove any remaining models. You may
+                add these models as a new squad into your reinforcements and
+                remove any Wound Markers (or any other status markers they had).
               </p>
             </div>
           </div>
@@ -847,21 +1006,36 @@
               sight of one of your unactivated squads.<br /><strong
                 >Requirements:</strong
               >
-              Activated squad not Locked-in-Combat.<br /><strong
+              The activated squad may not be locked-in-combat.<br /><strong
                 >Timing:</strong
               >
-              After the triggering squad finishes movement.
+              After the triggering squad has finished its movement.
             </div>
             <div class="rc-body">
               <p>
-                Each model may perform a
-                <strong>Ranged Opportunity Attack</strong> against the
-                triggering squad. If no model can make the attack, the action is
-                refunded. The Opportunity Attack is assumed to occur at the most
-                beneficial moment during the triggering movement — if the squad
-                had any moment out of cover and in LoS, it may be targeted
-                accordingly.
+                Each model in the activated squad may perform a Ranged
+                Opportunity Attack against the triggering squad. If the result
+                of the movement means that no model is eligible to perform the
+                attack, then the action is refunded; the activating squad does
+                not count as being activated.
               </p>
+            </div>
+            <div class="callout note">
+              <div class="callout-label">Note</div>
+              The Opportunity Attack assumes that the attack is made at the
+              point in time that benefits the attacker most. If the triggering
+              squad ends its movement out of sight or in cover with respect to
+              the activated squad, then the attacks can be assumed to have been
+              made at an earlier point in the triggering squad’s movement such
+              that they were in line of sight and out of cover with respect to
+              the activated squad (though only if such a point exists).
+              <br /><br />
+              Additionally, a Snapshot may still be declared if the triggering
+              squad’s movement results in the activated squad becoming
+              locked-in-combat. This is because the Snapshot reaction is made
+              upon the activated squad sighting the movement, even if the
+              attacks themselves are not resolved until after the triggering
+              squad’s movement.
             </div>
           </div>
 
@@ -870,17 +1044,18 @@
               Defend <span class="rc-type reaction">Reaction</span>
             </div>
             <div class="rc-meta">
-              <strong>Trigger:</strong> An opposing player Dashes into
-              Close-Combat Range with one of your unactivated squads.<br /><strong
+              <strong>Trigger:</strong> An opposing squad Dashes into
+              Close-Combat range with one of your unactivated squads.<br /><strong
                 >Timing:</strong
               >
-              After the opposing squad's movement, before any Melee Attack.
+              After the opposing squad has concluded their movement but before a
+              Melee Attack is performed.
             </div>
             <div class="rc-body">
               <p>
-                For the duration of the phase, if the triggering squad makes a
-                Melee Attack against this squad, they do so with a
-                <strong>−2 to hit</strong> penalty.
+                For the duration of the phase, if the triggering squad performs
+                a Melee Attack against the activated squad, they do so with a -2
+                to hit penalty.
               </p>
             </div>
           </div>
@@ -890,43 +1065,68 @@
               Hunker Down <span class="rc-type reaction">Reaction</span>
             </div>
             <div class="rc-meta">
-              <strong>Trigger:</strong> An opposing player targets one of your
-              unactivated squads with a Ranged Attack.<br /><strong
+              <strong>Trigger:</strong> An opposing squad targets one of your
+              unactivated squads with a Ranged Attack. <br /><strong
                 >Requirements:</strong
               >
-              Activated squad not Locked-in-Combat.<br /><strong
-                >Timing:</strong
-              >
-              After targets are declared, before the attack is performed.
+              The activated squad may not be locked-in-combat.
+              <br /><strong>Timing:</strong>
+              After the opposing squad has finished declaring targets but before
+              a Ranged Attack is performed.
             </div>
             <div class="rc-body">
               <p>
-                For the duration of the phase, if this squad has Cover against
-                an attacking model making a Ranged Attack, that model gains an
-                additional <strong>−1 to hit</strong> ranged penalty on top of
-                Cover's normal penalty.
+                For the duration of the phase, if the activated squad has cover
+                against an opposing model who is making a Ranged Attack, then
+                the opposing model gains a -1 to hit ranged penalty, in addition
+                to that provided by the cover.
               </p>
             </div>
           </div>
+
+          <h4 class="rule-title" id="engagement-resolution-step">
+            Resolution Step
+          </h4>
+          <p>
+            Any Hit Markers generated during this phase may now be allocated and
+            models destroyed. This can be done simultaneously, or following an
+            alternating squad resolution starting with the player with the
+            Initiative Token if the order matters.
+          </p>
+          <p>
+            Once this has been resolved, other Actions such as Retreat or
+            Objective-specific Actions may be resolved.
+          </p>
 
           <!-- LEADERSHIP PHASE -->
           <h3 class="subsection-title" id="leadership-phase">
             Leadership Phase
           </h3>
-          <p>Commanders attempt to rally troops after the round's carnage.</p>
-
-          <h4 class="rule-title">Morale Step</h4>
           <p>
-            For each squad that gained any Wound Markers this round: compare the
-            number of <em>unwounded models</em> to the number of
-            <em>Wound Markers generated this round</em>. If Wound Markers ≥
-            unwounded models, the squad must make a Command Test with a penalty
-            equal to that difference.
+            After a grueling round of manoeuvring and bloodshed, commanders and
+            sergeants alike attempt to rally their troops to remain in the
+            carnage.
+          </p>
+
+          <h4 class="rule-title" id="morale-step">Morale Step</h4>
+          <p>
+            During the Morale Step, players will need to take Command Tests for
+            all squads in their army who have taken significant casualties.
           </p>
           <p>
-            On failure, the squad begins <strong>Routing</strong>. Routing
-            squads may only take the <strong>Rout</strong> action and cannot
-            score objectives.
+            If a squad has gained any Wound Markers over the course of this
+            round, then compare the number of unwounded models to the number of
+            wounds generated this round. If the number of Wounds Markers
+            generated is equal to or larger than the number of unwounded models,
+            the squad must make a Command Test, with a penalty equal to the
+            difference between Wound Markers generated and unwounded models.
+          </p>
+          <p>
+            If the squad fails the Command Test then they are considered
+            Routing. They gain a new Action: Rout, usable in the Movement and
+            Engagement Phase, and no other Action can be taken in any phase
+            until they are no longer Routing. You may not score objectives,
+            Battlefield or Agenda, with Routing units.
           </p>
 
           <div class="rule-card">
@@ -938,44 +1138,62 @@
             </div>
             <div class="rc-body">
               <p>
-                Each model must move its full movement value toward the
-                controlling player's deployment edge via the shortest path. No
-                model may end within Close-Combat Range of an opposing squad —
-                if impossible, remove the model.
+                Each model in the squad must make a movement of its movement
+                value in inches, taking the shortest path towards the board’s
+                edge in the controlling player’s deployment area. No model in
+                the squad may come within Close-Combat range of an opposing
+                squad after starting this movement. If this is not possible,
+                remove the model.
               </p>
               <p>
-                After movement: if the squad is wholly within the controlling
-                player's deployment area it is <strong>destroyed</strong>.
-                Otherwise it makes a Command Test — on a pass it is no longer
-                Routing.
+                After finishing this movement, if the squad is wholly within the
+                controlling player’s deployment area, remove the squad - it is
+                destroyed. Otherwise, the squad makes a Command Test. If it
+                passes, the squad is no longer Routing.
               </p>
             </div>
           </div>
 
-          <h4 class="rule-title">Disband Step</h4>
+          <h4 class="rule-title" id="disband-step">Disband Step</h4>
           <p>
-            Heroes leading squads may depart. A Hero may move up to 1″, ending
-            outside Close-Combat Range of any friendly squad and not entering
-            Close-Combat Range of any opposing squad it wasn't already engaged
-            with.
+            During this step, players may declare if any of their Heroes, who
+            are leading squads, will depart from those squads. If this is the
+            case, a Hero may move up to 1” and must end that movement out of
+            Close-Combat range of any friendly squads, and may not enter into
+            Close-Combat range of any opposing squads that it was not already
+            locked-in-combat against at the start of this step.
           </p>
 
           <!-- STRATEGIC PHASE -->
           <h3 class="subsection-title" id="strategic-phase">Strategic Phase</h3>
           <p>
-            During the <strong>Agenda Step</strong>, players may declare scored
-            Agendas. In the <strong>Resolution Step</strong>, the next
-            unrevealed Battlefield Objective is revealed and the
-            <strong>Initiative Token</strong> passes to the other player.
+            New strategic orders come in from on high, maps are marked and
+            commanders given bottom-lines.
           </p>
 
-          <div class="callout">
-            <div class="callout-label">Ending the Match</div>
-            The match ends when a player reaches
-            <strong>10 Victory Points</strong>. If both players reach 10
-            simultaneously, continue until a player would gain VP alone. If that
-            too is simultaneous, the match is a <strong>draw</strong>.
-          </div>
+          <h4 class="rule-section" id="agenda-step">Agenda Step</h4>
+          <p>
+            During this step, players may declare if they have scored any
+            Agendas this Round.
+          </p>
+          <h4 class="rule-section" id="strategic-resolution-step">
+            Resolution Step
+          </h4>
+          <p>
+            During this step, if there are any unrevealed Battlefield Objectives
+            remaining, reveal the next objectives and resolve any of its
+            requirements. The Initiative Token is given to the other player.
+          </p>
+
+          <h3 class="rule-section" id="ending-the-match">Ending the Match</h3>
+
+          <p>
+            The match ends upon a player reaching 10 Victory Points, with that
+            player being the victor of the match. If two players reach 10
+            Victory Points at the same time, then the match continues until the
+            next time a player would gain Victory Points - if this too is
+            simultaneous then the match is a draw.
+          </p>
         </div>
 
         <hr class="section-divider" />
@@ -983,53 +1201,90 @@
         <!-- ════════════════════════════════════════
        SECTION 6 — COMBAT
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="combat">
-          <h2 class="section-title">Combat</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="combat">Combat</h2>
 
-          <h4 class="rule-title">Ranged Combat</h4>
+          <h4 class="rule-title" id="ranged-combat">Ranged Combat</h4>
           <p>
-            The model selects a ranged weapon and a target squad that is visible
-            and within range, then performs the Combat Sequence.
-          </p>
-
-          <h4 class="rule-title">Melee Combat</h4>
-          <p>
-            If not already in Close-Combat Range, the model may first move up to
-            <strong>3″</strong> toward an opposing model. It then selects a
-            melee weapon and a target in Close-Combat Range that is visible.
-          </p>
-          <p>
-            Models without a melee weapon may use an
-            <strong>Improvised Attack</strong>: Range Melee, Attacks 1,
-            Penetration Power 0, Stopping Power 1.
-          </p>
-          <p>
-            When selecting a melee weapon the model may opt for
-            <strong>Sweeping Attacks</strong>: double the number of attacks, but
-            lower Penetration and Stopping Power by one step each.
+            When a model is selected to make a Ranged Attack, it selects a
+            single ranged weapon that it is equipped with, and selects a target
+            opposing squad that is both visible to the model and within the
+            selected weapon’s range. It then performs an attack using the Combat
+            Sequence below.
           </p>
 
-          <h4 class="rule-title">Opportunity Attacks</h4>
+          <h4 class="rule-title" id="melee-combat">Melee Combat</h4>
           <p>
-            All Opportunity Attacks carry an innate
-            <strong>−2 to hit</strong> penalty due to their hasty nature. Ranged
-            Opportunity Attacks are assumed to occur at the most advantageous
-            moment during the triggering movement.
+            When a model is selected to make a Melee Attack, if it is not
+            already in Close-Combat range with an opposing model it may first
+            move up to 3” towards one. It then selects a single melee weapon
+            that it is equipped with, and selects a target opposing squad that
+            is both visible to the model and within Close-Combat range. It then
+            performs an attack using the Combat Sequence below.
+          </p>
+          <p>
+            If a model does not have any melee weapons equipped, then it may
+            select the following weapon:
+          </p>
+          <table class="rule-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Range</th>
+                <th>Attacks</th>
+                <th>Pierce Rating</th>
+                <th>Stopping Power</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Improvised Attack</strong></td>
+                <td>Melee</td>
+                <td>1</td>
+                <td>0</td>
+                <td>1</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            When selecting a melee weapon, the model may choose to make Sweeping
+            Attacks. If this is done, double the number of attacks the weapon
+            makes but lower its Penetration and Stopping Powers by 1 step for
+            the duration of this attack.
           </p>
 
-          <h3 class="subsection-title" id="combat-activation">
+          <h4 class="rule-title" id="opportunity-attacks">
+            Opportunity Attacks
+          </h4>
+          <p>
+            Attacks of opportunity are made similarly to other attacks but carry
+            an innate -2 penalty to hit due to their hasty nature. Ranged
+            Opportunity Attacks, such as when taking the Snapshot reaction, are
+            assumed to be taken at the most beneficial moment for the attacker.
+            If the target squad is Dashing and would necessarily have a moment
+            where the majority of models in the squad do not have cover against
+            the attacking model, then this is assumed to be the case when
+            resolving the Opportunity Attack.
+          </p>
+
+          <h3 class="subsection-title" id="combat-sequence-activation-step">
             Combat Sequence — Activation Step
           </h3>
 
           <h4 class="rule-title" id="rolling-to-hit">Rolling to Hit</h4>
           <p>
-            Roll <strong>1d6</strong>. Add bonuses and penalties. If the result
-            ≥ the model's To Hit value (Aim for Ranged, Prowess for Melee), a
-            hit is scored.
+            The model rolls a 1d6 for the attack and adds any relevant bonuses
+            or penalties. If the result of the roll plus any modifiers, is above
+            or equal to their To Hit value, then a hit is scored and proceeds to
+            the next step in the sequence.
           </p>
           <p>
-            The threshold may be modified past 7+ (impossible to hit) but never
-            below 2+ (a roll of 1 always misses).
+            The model’s To Hit value is their Aim value for a Ranged Attack and
+            their Prowess value for a Melee Attack.
+          </p>
+          <p>
+            This value can be modified past 7+ (Making it impossible to hit) but
+            can not be modified below 2+ (A roll of ‘1’ will always miss).
           </p>
 
           <table class="rule-table">
@@ -1063,18 +1318,22 @@
             </tbody>
           </table>
 
-          <h4 class="rule-title">Firing into Melee</h4>
+          <h4 class="rule-title" id="firing-into-melee">Firing into Melee</h4>
           <p>
-            When targeting a squad Locked-in-Combat with a friendly squad, the
-            attacking squad must first pass a
-            <span class="kw" data-term="Command Test">Command Test</span>. On
-            failure, another eligible target must be chosen (not
-            Locked-in-Combat with friendlies). If none exist, the squad ends its
-            activation without attacking.
+            A squad making a Ranged Attack, whose models select a target
+            opposing squad which is locked-in-combat with a friendly squad, must
+            first take a Command Test. Failing this they must choose another
+            eligible target for their attacks, this new target may not be
+            locked-in-combat with any friendly squads. If no such target exists,
+            then the squad instead ends their activation without making any
+            attacks.
           </p>
           <p>
-            On success, after determining hits, roll 1d6 per hit and compare
-            friendly vs. enemy numbers to determine friendly fire:
+            If the Command Test passes, then the squad may proceed to roll to
+            hit. After determining the number of hits scored, compare the total
+            number of friendly models locked-in-combat with the target squad to
+            the number of models in the target squad, then roll 1d6 for each hit
+            and consult the table below:
           </p>
 
           <table class="rule-table">
@@ -1086,39 +1345,66 @@
             </thead>
             <tbody>
               <tr>
-                <td>Target has ≥ 3× as many models as friendly locked</td>
+                <td>
+                  Target squad has at least 3 times as many models as the
+                  friendly models
+                </td>
                 <td>1</td>
               </tr>
               <tr>
-                <td>Target has more models, but fewer than 3×</td>
+                <td>
+                  Target squad has more models than the friendly models, but
+                  fewer than 3 times as many
+                </td>
                 <td>1–2</td>
               </tr>
               <tr>
-                <td>Target and friendly have equal models</td>
+                <td>
+                  Target squad and the friendly models have the same number of
+                  models
+                </td>
                 <td>1–3</td>
               </tr>
               <tr>
-                <td>Friendly has more models, but fewer than 3×</td>
+                <td>
+                  Friendly models have more models than the target squad, but
+                  fewer than 3 times as many
+                </td>
                 <td>1–4</td>
               </tr>
               <tr>
-                <td>Friendly has ≥ 3× as many models as target</td>
+                <td>
+                  Friendly models have at least 3 times as many models as the
+                  target squad
+                </td>
                 <td>1–5</td>
               </tr>
             </tbody>
           </table>
 
           <p>
-            Hits in the Friendly Hit Range are allocated to the friendly squad.
-            The attacking squad gains a
-            <strong>−1 Command Test penalty</strong> for each Hit Marker
-            generated by friendly fire this round.
+            If a roll falls within the relevant ‘Friendly Hit Range’ then the
+            scored hit must be allocated to a friendly squad locked-in-combat
+            with the target squad, and resolved as normal. Otherwise, it is
+            allocated to the target squad.
+          </p>
+          <p>
+            A squad gains a -1 penalty to Command Tests for the remainder of the
+            round for every Hit Marker generated against them from friendly
+            squads firing into melee.
           </p>
 
-          <h4 class="rule-title" id="armour">Rolling against Armour</h4>
+          <h4 class="rule-title" id="rolling-against-armour">
+            Rolling against Armour
+          </h4>
           <p>
-            Compare the weapon's <strong>Penetration Power (PP)</strong> to the
-            target squad's <strong>Armour Rating (AR)</strong>:
+            Once a hit has been successfully scored against an opposing squad,
+            another roll is required to determine if it is able to pierce the
+            armour of the foe.
+          </p>
+          <p>
+            Compare the Pierce Rating value of the selected weapon against the
+            Armour Rating value of the targeted squad using the rules below:
           </p>
           <ul
             style="
@@ -1128,10 +1414,13 @@
             "
           >
             <li style="margin-bottom: 6px">
-              PP ≥ AR → attack <strong>automatically</strong> succeeds.
+              If the Pierce Rating exceeds or equals the Armour Rating, then the
+              attack automatically succeeds.
             </li>
             <li style="margin-bottom: 6px">
-              PP &lt; AR → roll 1d6 per hit, compare to the threshold below.
+              If the Pierce Rating is less than the Armour Rating, then for each
+              successful hit, roll a 1d6, if the result is larger than or equal
+              to the relevant threshold below, then the attack succeeds.
             </li>
           </ul>
 
@@ -1144,91 +1433,105 @@
             </thead>
             <tbody>
               <tr>
-                <td>PP is 1 step less than AR</td>
+                <td>Pierce Rating is 1 step less than Armour Rating</td>
                 <td>4+</td>
               </tr>
               <tr>
-                <td>PP is 2 steps less than AR</td>
+                <td>Pierce Rating is 2 steps less than Armour Rating</td>
                 <td>5+</td>
               </tr>
               <tr>
-                <td>PP is 3 steps less than AR</td>
+                <td>Pierce Rating is 3 steps less than Armour Rating</td>
                 <td>6+</td>
               </tr>
               <tr class="highlight">
-                <td>PP is 4+ steps less than AR</td>
+                <td>
+                  Pierce Rating is 4 or more steps less than Armour Rating
+                </td>
                 <td>Cannot succeed</td>
               </tr>
             </tbody>
           </table>
 
-          <p>On success, adjust Stopping Power:</p>
-          <ul
-            style="
-              margin: 10px 0 14px 20px;
-              color: var(--text-secondary);
-              font-size: 14px;
-            "
-          >
-            <li style="margin-bottom: 6px">
-              PP ≤ AR: <strong>−1 Stopping Power</strong>.
-            </li>
-            <li style="margin-bottom: 6px">
-              PP exceeds AR by 2+ steps: <strong>+1 Stopping Power</strong> per
-              2 steps.
-            </li>
-          </ul>
           <p>
-            Each successful attack generates a
-            <strong>Hit Marker</strong> (represented by a die set to the
-            Stopping Power value).
+            Finally, if the attack succeeds, but the Pierce Rating is equal to
+            or less than the Armour Rating, then the Stopping Power value of the
+            attack is lowered by 1.
           </p>
 
-          <h3 class="subsection-title" id="combat-resolution">
-            Combat Sequence — Resolution Step
-          </h3>
+          <p>
+            Otherwise, for every 2 steps that the Pierce Rating exceeds the
+            Armour Rating, increase the Stopping Power value of the attack by 1.
+          </p>
+          <p>
+            Each successful attack results in a Hit Marker being generated
+            against the target squad. Hit Markers are best represented by dice
+            whose value is set to the Stopping Power value of the attack. There
+            is no limit to how many Hit Markers can be generated against a given
+            squad.
+          </p>
 
           <p>
-            Hit Markers are allocated one at a time to models by the controlling
-            player. Compare <strong>Stopping Power (SP)</strong> to the model's
-            <strong>Toughness (T)</strong> and roll <strong>2d3</strong>:
+            Once an attack has either failed or generated a hit, the attack
+            sequence ends.
+          </p>
+          <h3 class="subsection-title" id="combat-sequence-resolution-step">
+            Combat Sequence — Resolution Step
+          </h3>
+          <p>
+            For every Hit Marker against a squad, the squad’s controlling player
+            must roll to determine the damage done to models in that squad. Hit
+            Markers against a squad can be allocated in any order, one at a
+            time, to individual models within that squad by the controlling
+            player.
+          </p>
+          <p>
+            When an attack is allocated to a model, you compare the Stopping
+            Power value of the attack to the Toughness value of the model then
+            roll a 2d3 to determine the outcome based on the following table:
           </p>
 
           <table class="rule-table">
             <thead>
               <tr>
-                <th>SP vs T</th>
+                <th>Relative Values</th>
                 <th>Wound Threshold</th>
               </tr>
             </thead>
             <tbody>
               <tr class="highlight">
-                <td>SP is 3+ steps below Toughness</td>
+                <td>Stopping Power is 3 or more steps below Toughness</td>
                 <td>Cannot wound</td>
               </tr>
               <tr>
-                <td>SP is 2 steps below Toughness</td>
+                <td>Stopping Power is 2 steps below Toughness</td>
                 <td>6+</td>
               </tr>
               <tr>
-                <td>SP is 1 step below Toughness</td>
+                <td>Stopping Power is 1 step below Toughness</td>
                 <td>5+</td>
               </tr>
               <tr>
-                <td>SP equals Toughness</td>
+                <td>Stopping Power is equal to Toughness</td>
                 <td>4+</td>
               </tr>
               <tr>
-                <td>SP exceeds Toughness by 1 step</td>
+                <td>Stopping Power exceeds the Toughness by 1 step</td>
                 <td>3+</td>
               </tr>
               <tr class="highlight">
-                <td>SP exceeds Toughness by 2+ steps</td>
-                <td>Auto-wound</td>
+                <td>Stopping Power exceeds the Toughness by 2 or more steps</td>
+                <td>The attack automatically wounds the model.</td>
               </tr>
             </tbody>
           </table>
 
+          <p>
+            If a wound is generated, then a Wound Marker is placed against the
+            allocated model. If a model ever has as many (or more) Wound Markers
+            as their Endurance value, then the model is destroyed and removed
+            from the squad.
+          </p>
           <p>
             A successful wound places a <strong>Wound Marker</strong> on the
             model. When Wound Markers ≥ <strong>Endurance</strong> the model is
@@ -1249,8 +1552,10 @@
             </li>
           </ul>
           <p>
-            After all Wound Markers are applied and destroyed models removed,
-            check squad Cohesion — remove models as needed to restore it.
+            Once all Wound Markers have been applied and models destroyed, the
+            controlling player must check to see if the squad is cohesive, if it
+            is not they must remove models from the squad until the squad is
+            cohesive.
           </p>
         </div>
 
@@ -1259,18 +1564,20 @@
         <!-- ════════════════════════════════════════
        SECTION 7 — REFERENCE
   ════════════════════════════════════════ -->
-        <div class="rule-section" id="squad-traits">
-          <h2 class="section-title">Reference — Squad Traits</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="reference-squad-traits">
+            Reference — Squad Traits
+          </h2>
 
           <div class="rule-card">
             <div class="rc-name">Sentinel X</div>
             <div class="rc-body">
               <p>
-                A squad with this trait may make an additional
-                <strong>X Snapshot reactions</strong> when taking the Overwatch
-                action before replacing the Overwatch Marker with an Activation
-                Token. (Place X+1 Overwatch Markers; remove one after each
-                Snapshot.)
+                A squad with this trait may make an additional X Snapshot
+                reactions when taking the Overwatch action before replacing the
+                Overwatch Marker with an Activation Token. (It is recommended
+                that X+1 Overwatch Markers be placed next to the squad, with one
+                being removed after each Snapshot).
               </p>
             </div>
           </div>
@@ -1279,27 +1586,31 @@
             <div class="rc-name">Guard X″</div>
             <div class="rc-body">
               <p>
-                After an opposing squad finishes a movement within X″ of this
-                squad (while it has the Readied Marker from
-                <strong>Ready Blades</strong> and is not Locked-in-Combat), you
-                may move each model up to X″ — at least one model must finish
-                within Close-Combat Range of the opposing squad.
+                After an opposing squad finishes a movement within X inches of a
+                squad with this trait that has taken the Ready Blades action
+                (And still has the Readied Marker), if this squad is not
+                locked-in-combat, you may move each model up to X inches, so
+                long as at least one model finishes its movement within
+                Close-Combat range of the opposing squad.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="rule-section" id="model-traits">
-          <h2 class="section-title">Reference — Model Traits</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="reference-model-traits">
+            Reference — Model Traits
+          </h2>
 
           <div class="rule-card">
             <div class="rc-name">War Machine</div>
             <div class="rc-body">
               <p>
-                Does not suffer standard Wound Marker penalties. Instead,
-                whenever a Wound Marker is assigned, roll 1d6 and add (Stopping
-                Power − Toughness) of the attack, then consult the War Machine
-                damage table.
+                This model does not suffer the standard penalties from gaining
+                Wound Markers. Instead, whenever a Wound Marker is assigned to
+                the model, roll a d6 and add the Stopping Power of the Attack
+                minus the Toughness of the model to the result, then compare
+                that to the table below.
               </p>
             </div>
           </div>
@@ -1308,8 +1619,9 @@
             <div class="rc-name">Transport X Y…</div>
             <div class="rc-body">
               <p>
-                May carry up to X total size worth of models with at least one
-                tag listed in Y.
+                Models with the transport trait can have up to X worth of size
+                of models Embarked within them, so long as they have at least
+                one of the tags listed in Y…
               </p>
             </div>
           </div>
@@ -1317,7 +1629,10 @@
           <div class="rule-card">
             <div class="rc-name">Hover</div>
             <div class="rc-body">
-              <p>May pass over Obstacles without the −2″ movement penalty.</p>
+              <p>
+                Models with the hover trait may pass over Obstacles without
+                taking the penalty to their movement value.
+              </p>
             </div>
           </div>
 
@@ -1325,23 +1640,31 @@
             <div class="rc-name">Jump X″</div>
             <div class="rc-body">
               <p>
-                May ignore up to X″ of vertical distance when climbing terrain.
+                Models with the jump trait may ignore up to X inches of vertical
+                terrain movement when climbing.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="rule-section" id="weapon-traits">
-          <h2 class="section-title">Reference — Weapon Traits</h2>
+        <div class="rule-section">
+          <h2 class="section-title" id="reference-weapon-traits">
+            Reference — Weapon Traits
+          </h2>
 
           <div class="rule-card">
             <div class="rc-name">Pinpoint</div>
             <div class="rc-body">
               <p>
-                When allocating Hit Markers from this weapon, the
-                <em>attacking</em> player chooses which model resolves the wound
-                (instead of the controlling player).
+                When allocating Hit Markers generated from attacks with this
+                weapon, the attacking player decides which model must resolve
+                the wound instead of the controlling player.
               </p>
+            </div>
+            <div class="callout note">
+              <div class="callout-label">Note</div>
+              It may help to use different coloured Hit Markers for these
+              attacks.
             </div>
           </div>
 
@@ -1349,9 +1672,9 @@
             <div class="rc-name">Mounted</div>
             <div class="rc-body">
               <p>
-                May also be selected to make a Ranged Attack when the bearer
-                selects a ranged weapon. May target the same or a different
-                squad.
+                This weapon may also be selected to make a Ranged Attack when
+                the bearer selects a ranged weapon to attack with. It may target
+                the same or different squad as the other ranged weapon.
               </p>
             </div>
           </div>
@@ -1360,8 +1683,9 @@
             <div class="rc-name">Coaxial</div>
             <div class="rc-body">
               <p>
-                May also be selected to make a Ranged Attack when the bearer
-                selects a ranged weapon. Must target the same squad.
+                This weapon may also be selected to make a Ranged Attack when
+                the bearer selects a ranged weapon to attack with. It must
+                target the same squad as the other ranged weapon.
               </p>
             </div>
           </div>
@@ -1370,9 +1694,13 @@
             <div class="rc-name">Explosive X</div>
             <div class="rc-body">
               <p>
-                On a hit, roll 1d6 per model in the opposing squad — on X+,
-                generate an extra hit. When Firing into Melee, also roll for
-                each model in friendly squads locked in with the target.
+                When a hit is scored with this weapon, roll a d6 for each model
+                in the opposing squad. On a roll of X or higher, produce an
+                extra scored hit.
+              </p>
+              <p>
+                When Firing into Melee, also roll a d6 for each model in a
+                friendly squad that is locked-in-combat with the target squad.
               </p>
             </div>
           </div>
@@ -1381,8 +1709,8 @@
             <div class="rc-name">Flamer dX</div>
             <div class="rc-body">
               <p>
-                On a hit, roll dX and generate that many additional hits against
-                the opposing squad.
+                When a hit is scored with this weapon, roll X and produce that
+                many extra scored hits against the opposing squad.
               </p>
             </div>
           </div>
@@ -1391,11 +1719,16 @@
             <div class="rc-name">Stun X</div>
             <div class="rc-body">
               <p>
-                After a squad receives any Hit Markers from this weapon, roll
-                1d6. On X+, place an Activation Token on the opposing squad. If
-                one already exists, they only remove one at end of phase
-                (starting next Movement or Engagement Phase activated). Can only
-                trigger once per round per squad.
+                After a squad has received any number of Hit Markers from this
+                weapon, roll a D6. On a roll of X or higher, place an Activation
+                Token next to the opposing squad. If they already have an
+                Activation Token, then only remove one at the end of the phase;
+                the squad will start the next Movement or Engagement phase
+                activated.
+              </p>
+              <p>
+                A target squad can only be affected by this trait once per
+                round.
               </p>
             </div>
           </div>
@@ -1404,9 +1737,10 @@
             <div class="rc-name">Mortar</div>
             <div class="rc-body">
               <p>
-                May target squads the bearer cannot see, provided at least one
-                other friendly model has line of sight. Such attacks are made
-                with a <strong>−2 to hit</strong> penalty.
+                Attacks with this weapon can target squads that the bearer does
+                not have line of sight to, so long as at least one model in the
+                controlling player’s army does have line of sight on that squad.
+                Attacks made this way are at a -2 to hit penalty.
               </p>
             </div>
           </div>
@@ -1415,8 +1749,8 @@
             <div class="rc-name">Cull</div>
             <div class="rc-body">
               <p>
-                Increase this weapon's Stopping Power by 1 against targets with
-                an Armour Rating of 1 or less.
+                Increase the Stopping Power of this weapons attack by 1 against
+                targets with 1 or less Armour Rating.
               </p>
             </div>
           </div>
@@ -1425,8 +1759,7 @@
             <div class="rc-name">Ignores Armour</div>
             <div class="rc-body">
               <p>
-                Hits from this weapon automatically become Hit Markers — no
-                armour roll required.
+                Hits scored by this weapon automatically become Hit Markers.
               </p>
             </div>
           </div>
@@ -1435,8 +1768,8 @@
             <div class="rc-name">Ignores Cover</div>
             <div class="rc-body">
               <p>
-                Attacks from this weapon do not suffer to-hit penalties against
-                targets in Cover or Hunkering Down.
+                Attacks made by this weapon do not suffer a penalty against
+                targets in cover (or hunkered down).
               </p>
             </div>
           </div>

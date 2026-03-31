@@ -128,7 +128,14 @@ body {
   color: var(--text-muted);
 }
 
-.nav-link.sub:hover {
+.nav-link.sub2 {
+  padding-left: 48px;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.nav-link.sub:hover,
+.nav-link.sub2:hover {
   color: var(--text-secondary);
 }
 
