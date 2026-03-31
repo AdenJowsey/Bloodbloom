@@ -29,15 +29,20 @@
       </div>
 
       <div class="nav-section-label">Core Rules</div>
+
       <a href="#core-concepts" class="nav-link">Core Concepts</a>
-      <a href="#armies" class="nav-link sub">Armies, Squads & Models</a>
+
+      <a href="#armies" class="nav-link sub">Armies</a>
+      <a href="#squads" class="nav-link sub2">Squads</a>
+      <a href="#models" class="nav-link sub2">Models</a>
       <a href="#heroes" class="nav-link sub2">Heroes</a>
-      <a href="#tags" class="nav-link sub">Tags</a>
+      <a href="#tags" class="nav-link sub2">Tags</a>
+
       <a href="#cohesion" class="nav-link sub">Cohesion</a>
-      <a href="#locked-combat" class="nav-link sub">Locked-in-Combat</a>
-      <a href="#cc-range" class="nav-link sub">Close-Combat Range</a>
-      <a href="#los" class="nav-link sub">Line of Sight</a>
-      <a href="#cover" class="nav-link sub">Cover</a>
+      <a href="#locked-in-combat" class="nav-link sub">Locked-in-Combat</a>
+      <a href="#close-combat-range" class="nav-link sub2">Close-Combat Range</a>
+      <a href="#line-of-sight" class="nav-link sub">Line of Sight</a>
+      <a href="#cover" class="nav-link sub2">Cover</a>
 
       <a href="#objectives" class="nav-link">Objectives</a>
       <a href="#battlefield-objectives" class="nav-link sub"
@@ -47,49 +52,53 @@
 
       <a href="#orders" class="nav-link">Orders</a>
       <a href="#order-points" class="nav-link sub">Order Points</a>
-      <a href="#standard-orders" class="nav-link sub">Standard Orders</a>
+      <a href="#standard-orders" class="nav-link sub2">Standard Orders</a>
 
-      <a href="#actions" class="nav-link">Actions & Activations</a>
-      <a href="#activation" class="nav-link sub">Activation</a>
-      <a href="#action" class="nav-link sub">Action</a>
+      <a href="#activations" class="nav-link">Actions & Activations</a>
       <a href="#instant-actions" class="nav-link sub">Instant Actions</a>
       <a href="#prepare-actions" class="nav-link sub">Prepare Actions</a>
-      <a href="#interruptible" class="nav-link sub">Interruptible</a>
+      <a href="#interruptible" class="nav-link sub2">Interruptible</a>
       <a href="#reactions" class="nav-link sub">Reactions</a>
 
       <a href="#movement" class="nav-link sub">Movement</a>
-      <a href="#obstacles" class="nav-link sub">Obstacles</a>
-      <a href="#pivots" class="nav-link sub">Pivots</a>
-      <a href="#flying" class="nav-link sub">Flying</a>
+      <a href="#obstacles" class="nav-link sub2">Obstacles</a>
+      <a href="#pivots" class="nav-link sub2">Pivots</a>
+      <a href="#flying" class="nav-link sub2">Flying</a>
 
       <a href="#command-test" class="nav-link sub">Command Test</a>
 
       <div class="nav-section-label">Order of Play</div>
-      <a href="#setup" class="nav-link">Setting Up the Match</a>
-      <a href="#rounds" class="nav-link">Rounds</a>
+
+      <a href="#order-of-play" class="nav-link">Order of Play</a>
       <a href="#movement-phase" class="nav-link sub">Movement Phase</a>
       <a href="#deployment-phase" class="nav-link sub">Deployment Phase</a>
-      <a href="#engagement-phase" class="nav-link sub">Engagement Phase</a>
-      <a href="#leadership-phase" class="nav-link sub">Leadership Phase</a>
-      <a href="#strategic-phase" class="nav-link sub">Strategic Phase</a>
-      <a href="#ending-match" class="nav-link sub">Ending the Match</a>
+      <a href="#movement-activation-step" class="nav-link sub2"
+        >Activation Step</a
+      >
+      <a href="#movement-resolution-step" class="nav-link sub2"
+        >Resolution Step</a
+      >
+      <a href="#embarking-step" class="nav-link sub2">Embarking Step</a>
+      <a href="#transports" class="nav-link sub2">Transports</a>
 
       <div class="nav-section-label">Combat</div>
+
       <a href="#combat" class="nav-link">Combat Overview</a>
       <a href="#ranged-combat" class="nav-link sub">Ranged Combat</a>
       <a href="#melee-combat" class="nav-link sub">Melee Combat</a>
       <a href="#opportunity-attacks" class="nav-link sub"
         >Opportunity Attacks</a
       >
-      <a href="#combat-activation" class="nav-link sub">Activation Step</a>
-      <a href="#rolling-to-hit" class="nav-link sub">Rolling to Hit</a>
-      <a href="#modifiers" class="nav-link sub">Modifiers to Hit</a>
-      <a href="#firing-melee" class="nav-link sub">Firing into Melee</a>
-      <a href="#armour" class="nav-link sub">Rolling vs Armour</a>
-      <a href="#combat-resolution" class="nav-link sub">Resolution Step</a>
-      <a href="#hit-markers" class="nav-link sub">Resolving Hit Markers</a>
+      <a href="#combat-activation" class="nav-link sub2">Activation Step</a>
+      <a href="#rolling-to-hit" class="nav-link sub2">Rolling to Hit</a>
+      <a href="#modifiers" class="nav-link sub2">Modifiers to Hit</a>
+      <a href="#firing-melee" class="nav-link sub2">Firing into Melee</a>
+      <a href="#armour" class="nav-link sub2">Rolling vs Armour</a>
+      <a href="#combat-resolution" class="nav-link sub2">Resolution Step</a>
+      <a href="#hit-markers" class="nav-link sub2">Resolving Hit Markers</a>
 
       <div class="nav-section-label">Reference</div>
+
       <a href="#squad-traits" class="nav-link">Squad Traits</a>
       <a href="#model-traits" class="nav-link">Model Traits</a>
       <a href="#weapon-traits" class="nav-link">Weapon Traits</a>
@@ -113,22 +122,147 @@
         <div class="toc-box">
           <div class="toc-title">Contents</div>
           <ol>
+            <!-- CORE CONCEPTS -->
             <li>
               <a href="#core-concepts">Core Concepts</a>
               <ul>
-                <li><a href="#armies">Armies, Squads & Models</a></li>
-                <li><a href="#heroes">Heroes</a></li>
+                <li>
+                  <a href="#armies">Armies</a>
+                  <ul>
+                    <li><a href="#squads">Squads</a></li>
+                    <li><a href="#models">Models</a></li>
+                    <li><a href="#heroes">Heroes</a></li>
+                    <li><a href="#tags">Tags</a></li>
+                  </ul>
+                </li>
                 <li><a href="#cohesion">Cohesion</a></li>
-                <li><a href="#combat-ranges">Ranges & Line of Sight</a></li>
-                <li><a href="#cover">Cover</a></li>
+                <li>
+                  <a href="#locked-in-combat">Locked-in-Combat</a>
+                  <ul>
+                    <li>
+                      <a href="#close-combat-range">Close-Combat Range</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#line-of-sight">Line of Sight</a>
+                  <ul>
+                    <li><a href="#cover">Cover</a></li>
+                  </ul>
+                </li>
               </ul>
             </li>
-            <li><a href="#objectives">Objectives</a></li>
-            <li><a href="#orders">Orders</a></li>
-            <li><a href="#actions">Actions & Activations</a></li>
-            <li><a href="#rounds">Order of Play</a></li>
-            <li><a href="#combat">Combat</a></li>
-            <li><a href="#squad-traits">Reference</a></li>
+
+            <!-- OBJECTIVES -->
+            <li>
+              <a href="#objectives">Objectives</a>
+              <ul>
+                <li>
+                  <a href="#battlefield-objectives">Battlefield Objectives</a>
+                </li>
+                <li><a href="#agendas">Agendas</a></li>
+              </ul>
+            </li>
+
+            <!-- ORDERS -->
+            <li>
+              <a href="#orders">Orders</a>
+              <ul>
+                <li><a href="#order-points">Order Points</a></li>
+                <li><a href="#standard-orders">Standard Orders</a></li>
+              </ul>
+            </li>
+
+            <!-- ACTIVATIONS -->
+            <li>
+              <a href="#activations">Actions & Activations</a>
+              <ul>
+                <li><a href="#instant-actions">Instant Actions</a></li>
+                <li>
+                  <a href="#prepare-actions">Prepare Actions</a>
+                  <ul>
+                    <li><a href="#interruptible">Interruptible</a></li>
+                  </ul>
+                </li>
+                <li><a href="#reactions">Reactions</a></li>
+                <li>
+                  <a href="#movement">Movement</a>
+                  <ul>
+                    <li><a href="#obstacles">Obstacles</a></li>
+                    <li><a href="#pivots">Pivots</a></li>
+                    <li><a href="#flying">Flying</a></li>
+                  </ul>
+                </li>
+                <li><a href="#command-test">Command Test</a></li>
+              </ul>
+            </li>
+
+            <!-- ORDER OF PLAY (FIXED) -->
+            <li>
+              <a href="#order-of-play">Order of Play</a>
+              <ul>
+                <li>
+                  <a href="#movement-phase">Movement Phase</a>
+                  <ul>
+                    <li>
+                      <a href="#movement-activation-step">Activation Step</a>
+                    </li>
+                    <li>
+                      <a href="#movement-resolution-step">Resolution Step</a>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#deployment-phase">Deployment Phase</a>
+                  <ul>
+                    <li><a href="#embarking-step">Embarking Step</a></li>
+                    <li><a href="#transports">Transports</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#engagement-phase">Engagement Phase</a></li>
+                <li><a href="#leadership-phase">Leadership Phase</a></li>
+                <li><a href="#strategic-phase">Strategic Phase</a></li>
+                <li><a href="#ending-match">Ending the Match</a></li>
+              </ul>
+            </li>
+
+            <!-- COMBAT (PROPERLY NESTED) -->
+            <li>
+              <a href="#combat">Combat</a>
+              <ul>
+                <li>
+                  <a href="#ranged-combat">Ranged Combat</a>
+                  <ul>
+                    <li><a href="#rolling-to-hit">Rolling to Hit</a></li>
+                    <li><a href="#modifiers">Modifiers to Hit</a></li>
+                    <li><a href="#firing-melee">Firing into Melee</a></li>
+                  </ul>
+                </li>
+
+                <li>
+                  <a href="#melee-combat">Melee Combat</a>
+                  <ul>
+                    <li><a href="#combat-activation">Activation Step</a></li>
+                    <li><a href="#armour">Rolling vs Armour</a></li>
+                    <li><a href="#combat-resolution">Resolution Step</a></li>
+                    <li><a href="#hit-markers">Resolving Hit Markers</a></li>
+                  </ul>
+                </li>
+
+                <li><a href="#opportunity-attacks">Opportunity Attacks</a></li>
+              </ul>
+            </li>
+
+            <!-- REFERENCE -->
+            <li>
+              <a href="#squad-traits">Reference</a>
+              <ul>
+                <li><a href="#model-traits">Model Traits</a></li>
+                <li><a href="#weapon-traits">Weapon Traits</a></li>
+              </ul>
+            </li>
           </ol>
         </div>
 
