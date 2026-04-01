@@ -12,10 +12,10 @@
   --gold-dim: #8a6e2c;
   --text-primary: #e8e0d4;
   --text-secondary: #a09888;
-  --text-muted: #6a6258;
+  --text-muted: #dad3cb;
   --keyword-bg: #1a2030;
   --keyword-border: #2a4a7a;
-  --keyword-text: #7ab3e8;
+  --keyword-text: #d5815c;
   --tag-bg: #1e1a2a;
   --tag-text: #9a7ad4;
   --nav-w: 280px;
@@ -51,6 +51,7 @@ body {
   z-index: 100;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 #sidebar-header {
@@ -195,7 +196,7 @@ body {
 
 h2.section-title {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 13px;
+  font-size: 33px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -229,6 +230,13 @@ h4.rule-title {
 p {
   margin-bottom: 12px;
   color: var(--text-primary);
+}
+
+.content-ref {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.1s;
 }
 
 /* ── RULE CARDS (Orders / Actions) ── */
@@ -318,11 +326,13 @@ p {
 /* ── KEYWORD TOOLTIPS ── */
 .kw {
   color: var(--keyword-text);
-  border-bottom: 1px dashed var(--keyword-border);
   cursor: help;
   position: relative;
   display: inline-block;
-  font-style: italic;
+}
+
+.kw.clickable {
+  cursor: pointer;
 }
 
 .kw .tooltip {
@@ -526,11 +536,12 @@ p {
   margin-bottom: 36px;
   display: inline-block;
   min-width: 260px;
+  width: 100%;
 }
 
 .toc-box .toc-title {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 11px;
+  font-size: 25px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -542,11 +553,14 @@ p {
   padding-left: 18px;
   counter-reset: toc;
   list-style: none;
+  columns: 3;
+  column-gap: 32px;
 }
 
 .toc-box > ol > li {
   counter-increment: toc;
   margin-bottom: 5px;
+  break-inside: avoid;
 }
 
 .toc-box > ol > li::before {
@@ -744,4 +758,9 @@ body:has(#sidebar.collapsed) #sidebar-collapse-btn::after {
 
 #main.collapsed {
   margin-left: 0;
+}
+
+#nav-scroll {
+  flex: 1;
+  overflow-y: auto;
 }
