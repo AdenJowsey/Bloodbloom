@@ -764,3 +764,49 @@ body:has(#sidebar.collapsed) #sidebar-collapse-btn::after {
   flex: 1;
   overflow-y: auto;
 }
+
+/* ── BACK TO TOP ── */
+#back-to-top-btn {
+  position: fixed;
+  top: 48px; /* sits just below #sidebar-collapse-btn */
+  left: calc(var(--nav-w) - 28px);
+  z-index: 101;
+  background: var(--bg-panel);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  color: var(--text-muted);
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    left 0.2s ease,
+    opacity 0.2s ease,
+    color 0.15s,
+    border-color 0.15s;
+}
+
+#back-to-top-btn::after {
+  content: "↑";
+}
+
+#back-to-top-btn.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#back-to-top-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-light);
+}
+
+/* Mirror the collapse button's position shift when sidebar is collapsed */
+body:has(#sidebar.collapsed) #back-to-top-btn {
+  left: 6px;
+}

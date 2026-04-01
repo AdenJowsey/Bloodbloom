@@ -24,6 +24,11 @@
       aria-label="Collapse sidebar"
       title="Collapse sidebar"
     ></button>
+    <button
+      id="back-to-top-btn"
+      aria-label="Back to top"
+      title="Back to top"
+    ></button>
     <nav id="sidebar">
       <div id="sidebar-header">
         <div class="game-title">Bloodbloom</div>
@@ -417,7 +422,10 @@
           </div>
           <div class="rule-card">
             <div class="rc-name">Sprint <span class="op-cost">1 OP</span></div>
-            <div class="rc-meta"><strong>Phase:</strong> Movement Phase</div>
+            <div class="rc-meta">
+              <strong>Phase:</strong>
+              <a class="content-ref" href="#movement-phase">Movement Phase</a>
+            </div>
             <div class="rc-body">
               <p>
                 When a squad starts a
@@ -432,7 +440,11 @@
               Sequence Break <span class="op-cost">2 OP</span>
             </div>
             <div class="rc-meta">
-              <strong>Phase:</strong> Movement or Engagement Phase
+              <strong>Phase:</strong>
+              <a class="content-ref" href="#movement-phase">Movement</a> or
+              <a class="content-ref" href="#engagement-phase"
+                >Engagement Phase</a
+              >
             </div>
             <div class="rc-body">
               <p>
@@ -458,19 +470,34 @@
               Update Directives <span class="op-cost">3 OP</span>
             </div>
             <div class="rc-meta">
-              <strong>Phase:</strong> Strategic Phase (Agenda Step)
+              <strong>Phase:</strong>
+              <a class="content-ref" href="#agenda-step"
+                >Strategic Phase (Agenda Step)</a
+              >
             </div>
             <div class="rc-body">
-              <p>Discard an unscored Agenda and draw a new one.</p>
+              <p>
+                Discard an unscored
+                <span class="kw" data-term="Agenda">Agenda</span> and draw a new
+                one.
+              </p>
             </div>
           </div>
           <div class="rule-card">
             <div class="rc-name">Ready <span class="op-cost">4 OP</span></div>
-            <div class="rc-meta"><strong>Phase:</strong> Engagement Phase</div>
+            <div class="rc-meta">
+              <strong>Phase:</strong>
+              <a class="content-ref" href="#engagement-phase"
+                >Engagement Phase</a
+              >
+            </div>
             <div class="rc-body">
               <p>
-                Before activating a squad on your turn, remove the Activation
-                Token from an already-activated squad to ready them.
+                Before activating a squad on your turn, remove the
+                <span class="kw" data-term="Activation Token"
+                  >Activation Token</span
+                >
+                from an already-activated squad to ready them.
               </p>
             </div>
           </div>
@@ -1449,11 +1476,7 @@
                 <th>Name</th>
                 <th>Range</th>
                 <th>Attacks</th>
-                <th>
-                  <span class="kw" data-term="Pierce Rating"
-                    >Pierce Rating</span
-                  >
-                </th>
+                <th>Pierce Rating</th>
                 <th>Stopping Power</th>
               </tr>
             </thead>
@@ -1474,9 +1497,7 @@
             the duration of this attack.
           </p>
           <h3 id="opportunity-attacks" class="section-title">
-            <span class="kw" data-term="Opportunity Attack"
-              >Opportunity Attacks</span
-            >
+            Opportunity Attacks
           </h3>
           <p>
             Attacks of opportunity are made similarly to other attacks but carry
@@ -1485,8 +1506,8 @@
               >Ranged Opportunity Attacks</span
             >, such as when taking the Snapshot reaction, are assumed to be
             taken at the most beneficial moment for the attacker. If the target
-            squad is Dashing and would necessarily have a moment where the
-            majority of models in the squad do not have
+            squad is <strong>Dashing</strong> and would necessarily have a
+            moment where the majority of models in the squad do not have
             <span class="kw" data-term="Cover">cover</span> against the
             attacking model, then this is assumed to be the case when resolving
             the
@@ -1527,14 +1548,14 @@
               <tr>
                 <td>
                   <span class="kw" data-term="Melee Attack">Melee Attack</span>
-                  after Dashing into combat
+                  after <strong>Dashing</strong> into combat
                 </td>
                 <td>+1 to hit</td>
               </tr>
               <tr>
                 <td>
                   <span class="kw" data-term="Melee Attack">Melee Attack</span>
-                  against opponents Defending
+                  against opponents <strong>Defending</strong>
                 </td>
                 <td>&minus;2 to hit</td>
               </tr>
@@ -1553,7 +1574,7 @@
                   <span class="kw" data-term="Ranged Attack"
                     >Ranged Attack</span
                   >
-                  against squad Hunkering Down in
+                  against squad <strong>Hunkering Down</strong> in
                   <span class="kw" data-term="Cover">Cover</span>
                 </td>
                 <td>&minus;2 to hit</td>
@@ -1658,7 +1679,7 @@
             <span class="kw" data-term="Command Test">Command Tests</span> for
             the remainder of the round for every
             <span class="kw" data-term="Hit Marker">Hit Marker</span> generated
-            against them from friendly squads firing into melee.
+            against them from friendly squads Firing into Melee.
           </p>
           <h4 id="rolling-against-armour" class="rule-title">
             Rolling against Armour

@@ -185,3 +185,20 @@ collapseBtn.addEventListener("click", () => {
 // Restore preference across page loads
 const storedCollapsed = localStorage.getItem(STORAGE_KEY) === "1";
 setSidebarCollapsed(storedCollapsed);
+
+// ── Back to top ───────────────────────────────────────────────────────────
+
+const backToTopBtn = document.getElementById("back-to-top-btn");
+const SCROLL_THRESHOLD = 300; // px from top before button appears
+
+window.addEventListener(
+  "scroll",
+  () => {
+    backToTopBtn.classList.toggle("visible", window.scrollY > SCROLL_THRESHOLD);
+  },
+  { passive: true },
+);
+
+backToTopBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

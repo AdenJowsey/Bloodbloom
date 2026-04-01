@@ -16,6 +16,10 @@
  */
 
 const KEYWORDS = {
+  Agenda: {
+    body: "A secret objective that can be scored for Victory Points.",
+    link: "#agendas",
+  },
   Action: {
     body: "A task assigned to an activated squad; all models in the squad perform the same action.",
     link: "#activations",
