@@ -79,12 +79,18 @@
 
           <h4 id="models" class="rule-title">Models</h4>
           <p>
-            <span style="font-weight: 400"
-              ><strong>Models</strong> are the individual troops, tanks, and
-              commanders that make up your army. Every model in your army will
-              be in a squad, though this may be a squad of one in some
-              cases.</span
-            >
+            <strong>Models</strong> are the individual troops, tanks, and
+            commanders that make up your army. Every model in your army will be
+            in a squad, though this may be a squad of one in some cases.
+          </p>
+          <p>
+            Models generally have a base and a miniature on top of that base.
+            The base describes the area the model occupies on the battlefield
+            and is used for measurements, while the miniature is used for visual
+            representation and to determine line of sight and cover. A model's
+            base must remain flat and entirely on the battlefield or terrain
+            surface below it. No model's base can be placed on top of another
+            model's base.
           </p>
           <p>
             Models are prescribed a set of characteristics from their
@@ -95,7 +101,8 @@
           </p>
           <p>
             When a rule refers to a model's characteristic, it will generally be
-            referring to that model's trait value, unless specified otherwise.
+            referring to that model's characteristic value, unless specified
+            otherwise.
           </p>
           <div class="callout">
             <div class="callout-label">Example</div>
@@ -601,11 +608,18 @@
           </p>
           <h4 id="flying" class="rule-title">Flying</h4>
           <p>
-            Models with the Flying
+            Models with the <span class="trait">Flying</span>
             <span class="kw" data-term="Trait">trait</span> may move through the
             air, so long as they finish their movement on a surface that can
             entirely fit their base. When moving through the air, measure the
             direct 3-dimensional movement of the model through the air.
+          </p>
+
+          <p>
+            When flying up to a higher surface, the model should measure its
+            3-dimensional movement to the edge of the surface, then whatever
+            horizontal movement is required so that the model can fit its entire
+            base on the surface.
           </p>
           <h4 id="obstacles" class="rule-title">Obstacles</h4>
           <p>
@@ -619,19 +633,13 @@
             <span class="kw" data-term="Terrain">Terrain</span> larger than
             2&rdquo; can not be moved through, though it may be climbed by
             models with the
-            <span class="kw" data-term="Tag">Infantry</span>
+            <span class="tag">Infantry</span>
             <span class="kw" data-term="Tag">tag</span>. For a model to climb a
             piece of vertical terrain, it must have enough movement to traverse
             the vertical distance, in addition to any horizontal movement
             required so that its entire base can fit onto the new surface. If
             the surface does not have enough room for the entire base of the
             model to fit, then the model may not climb that terrain.
-          </p>
-          <p>
-            When flying up to a higher surface, the model should measure its
-            3-dimensional movement to the edge of the surface, then whatever
-            horizontal movement is required so that the model can fit its entire
-            base on the surface.
           </p>
 
           <h3 id="command-test" class="subsection-title">Command Test</h3>
@@ -675,13 +683,190 @@
         <div class="rule-section">
           <h2 id="order-of-play" class="section-title">Order of Play</h2>
           <h3 id="building-armies" class="subsection-title">Building Armies</h3>
+          <p>
+            Before starting a match, players must first decide on the
+            <span class="kw" data-term="Supply Limit">Supply Limit</span> of the
+            battle. Higher Supply Limits allow for larger armies, and thus
+            longer and more complex battles, while lower Supply Limits lead to
+            smaller armies and quicker matches. Once the Supply Limit is
+            decided, players then pick a <strong>faction</strong>.
+          </p>
+
+          <p>
+            Each faction has a specific set of squads, abilities,
+            <span class="kw" data-term="Orders">Orders</span>, and
+            <span class="kw" data-term="Agendas">Agendas</span> available to
+            them. A player may add any squads avaiable to their faction into
+            their army, selecting any specifics weapons or equipment, so long as
+            the total <span class="kw" data-term="Supply">Supply Cost</span> of
+            their army does not exceed the agreed upon
+            <span class="kw" data-term="Supply Limit">Supply Limit</span>.
+          </p>
+
+          <p>
+            Additionally, any army created must adhere to the following two
+            constraints:
+          </p>
+          <ul>
+            <li>
+              At least half of the squads in an army must have the
+              <span class="tag">Core</span>
+              <span class="kw" data-term="Tag">tag</span>.
+            </li>
+            <li>
+              It must contain at least one
+              <span class="kw" data-term="Hero">Hero</span> squad.
+            </li>
+          </ul>
+          <br />
+          <p>
+            Once an army is assembled, their player must nominate a
+            <span class="kw" data-term="Hero">Hero</span> squad as the army's
+            <span class="kw" data-term="Commander">Commander</span>
+            .
+          </p>
           <h3 id="setting-up" class="subsection-title">Setting Up The Match</h3>
+          <p>
+            After both players have assembled their armies, they proceed to set
+            up the battlefield. This involves designating the play area -
+            recommended size: 6′ × 4′ (1.8 m × 1.2 m). Then placing
+            <span class="kw" data-term="Terrain">Terrain</span> pieces on the
+            battlefield, which can be done by either player or by mutual
+            agreement.
+            <span class="kw" data-term="Terrain">Terrain</span> pieces should be
+            placed in such a way to obscure
+            <span class="kw" data-term="Line of Sight">Line of Sight</span> from
+            the majority of any one edge of the play area to another, ideally
+            through a mix of tall and short
+            <span class="kw" data-term="Terrain">Terrain</span> pieces. Leaving
+            large open areas of the battlefield is generally not recommended, as
+            it can lead to less interesting matches. Additionally, unpassable
+            <span class="kw" data-term="Terrain">terrain</span> should be placed
+            in such a way to leave multiple viable paths across the battlefield,
+            and not to create any chokepoints that would be too advantageous for
+            one player to control.
+          </p>
+
+          <p>
+            Once the battlefield is set up, dice and markers, such as
+            <span class="kw" data-term="Activation Token"
+              >Activation Tokens</span
+            >, should be placed within easy reach of both players.
+          </p>
+
+          <p>
+            Finally, players should choose opposite edges of the battlefield to
+            deploy on. If one player set up most of the
+            <span class="kw" data-term="Terrain">terrain</span>, then the other
+            player should choose which edge to deploy on, otherwise, players can
+            roll a d6 and the highest roller may choose which side to deploy on.
+            Their
+            <span class="kw" data-term="Deployment Zone">Deployment Zone</span>
+            extends 6&rdquo; from their edge of the battlefield.
+          </p>
 
           <h3 id="revealing-objectives" class="subsection-title">
             Revealing Objectives
           </h3>
+          <p>
+            Players shuffle the
+            <span class="kw" data-term="Battlefield Objective"
+              >Battlefield Objective</span
+            >
+            deck and draw out 4 objectives, facedown, near the battlefield.
+            Then, flip over the first of the four. Immediately place any of the
+            objectives requirements or markers on the battlefield as necessary.
+            This is the first
+            <span class="kw" data-term="Battlefield Objective"
+              >Battlefield Objective</span
+            >.
+          </p>
+          <p>
+            After this, players shuffle and draw 3
+            <span class="kw" data-term="Agenda">Agenda</span> cards each from
+            their own decks and discard 1 of their choice.
+          </p>
+
+          <p>
+            Alternatively, should the players agree beforehand, they may choose
+            to use a preset scenario with predefined objectives and deployment
+            zones.
+          </p>
           <h3 id="deployment" class="subsection-title">Deployment</h3>
+          <p>
+            The player with the lowest number of squads in their army decides
+            who gains the
+            <span class="kw" data-term="Initiative Token">Initiative Token</span
+            >. If players are tied, both players roll a 1d6 until one of them
+            gets the higher number, that player may decide who starts with the
+            <span class="kw" data-term="Initiative Token">Initiative Token</span
+            >.
+          </p>
+
+          <p>
+            Starting with the player who has the
+            <span class="kw" data-term="Initiative Token">Initiative Token</span
+            >, players take turns choosing either to place their squads in their
+            <span class="kw" data-term="Reinforcements">Reinforcements</span> or
+            take the <strong>Deploy</strong>
+            <span class="kw" data-term="Action">Action</span>.
+          </p>
+
+          <div class="rule-card">
+            <div class="rc-name">
+              Deploy <span class="rc-type instant">Instant</span>
+            </div>
+            <div class="rc-meta">
+              <strong>Requirements:</strong> The activated squad is un-deployed
+              or in
+              <span class="kw" data-term="Reinforcements">Reinforcements</span>.
+            </div>
+            <div class="rc-body">
+              <p>
+                Each model in the squad is placed on to the battlefield wholly
+                within the controlling player&rsquo;s
+                <span class="kw" data-term="Deployment Zone"
+                  >Deployment Zone</span
+                >. A model must be placed
+                <span class="kw" data-term="Cohesion">cohesively</span> with the
+                rest of its squad, and may not be placed within
+                <span class="kw" data-term="Close-Combat Range"
+                  >Close-Combat Range</span
+                >
+                of an opposing squad.
+              </p>
+            </div>
+          </div>
+
+          <p>
+            Players continue taking turns until one player has no more squads
+            left to deploy, at which point the other player may continue
+            deploying their squads until they have no more left to deploy.
+          </p>
+
           <h3 id="playing" class="subsection-title">Playing The Match</h3>
+
+          <p>
+            Once deployment is over, the match begins. The match is played in a
+            series of <a class="content-ref" href="#rounds">rounds</a>, with
+            each round being made up of a series of phases. Players continue
+            through these rounds and phases until one player has achieved enough
+            <span class="kw" data-term="Victory Points">Victory Points</span> to
+            win the match.
+          </p>
+
+          <h3 id="ending-the-match" class="rule-section">Ending the Match</h3>
+          <p>
+            The match ends upon a player reaching 10
+            <span class="kw" data-term="Victory Points">Victory Points</span>,
+            with that player being the victor of the match. If two players reach
+            10
+            <span class="kw" data-term="Victory Points">Victory Points</span> at
+            the same time, then the match continues until the next time a player
+            would gain
+            <span class="kw" data-term="Victory Points">Victory Points</span> -
+            if this too is simultaneous then the match is a draw.
+          </p>
 
           <h2 id="rounds" class="section-title">Rounds</h2>
           <p>
@@ -860,7 +1045,7 @@
           </p>
           <h4 id="transports" class="rule-title">Transports</h4>
           <p>
-            Models with the Transport
+            Models with the <span class="trait">Transport</span>
             <span class="kw" data-term="Trait">trait</span> can allow other
             models to be stored inside them. During this time, those models can
             not be targeted with
@@ -870,13 +1055,14 @@
             under certain conditions.
           </p>
           <p>
-            A given transport will have a specific
-            <span class="kw" data-term="Tag">tag</span> (or
-            <span class="kw" data-term="Tag">tags</span>) and a capacity. The
-            transport may only contain a number of models whose combined sizes
-            add up to its capacity. A model can only Embark into a transport if
-            it has the <span class="kw" data-term="Tag">tag</span> specified and
-            if their entire squad also Embarks.
+            A given transport will have a list of
+            <span class="kw" data-term="Tag">tags</span> and a capacity. The
+            transport may only contain a number of models whose combined
+            <span class="kw" data-term="Size">sizes</span> add up to its
+            capacity. A model can only Embark into a transport if it has at
+            least one of the
+            <span class="kw" data-term="Tag">tags</span> specified and if their
+            entire squad can also Embark.
           </p>
           <p>
             A given squad can either Embark or Disembark in the Embarking Step
@@ -887,9 +1073,10 @@
               Embark <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
-              <strong>Requirements:</strong> Every model within a squad must be
-              wholly within 3&rdquo; of a target transport and the squad may not
-              be
+              <strong>Requirements:</strong> Every model within a squad must
+              have an unobstructed path, no more than half of the model's
+              <span class="kw" data-term="Movement">movement value</span> to a
+              target transport and the squad may not be
               <span class="kw" data-term="Locked-in-Combat"
                 >Locked-in-Combat</span
               >.
@@ -911,14 +1098,22 @@
             </div>
             <div class="rc-body">
               <p>
-                Place all models from the activated squad wholly within 3&rdquo;
-                of the transport. If any models can not be placed wholly within
-                3" for whatever reason, they are destroyed instead. After
-                placing all models of a squad, if you had placed any models into
+                For each model in the activated squad, first place the model in
+                base-to-base contact with the transport, you may then move the
+                model up to half of its
+                <span class="kw" data-term="Movement">movement value</span> in
+                inches away from the transport. If any models can not be placed
+                in base-to-base contact with the transport for whatever reason,
+                they are destroyed instead.
+              </p>
+              <p>
+                After placing all models of a squad, if you had placed any
+                models into
                 <span class="kw" data-term="Close-Combat Range"
                   >Close-Combat range</span
                 >
-                of opposing models, those models may make a Melee
+                of opposing models (either before, after, or during their
+                movement), those opposing models may make a Melee
                 <span class="kw" data-term="Opportunity Attack"
                   >Opportunity Attack</span
                 >
@@ -936,8 +1131,8 @@
           </div>
           <h4 id="reinforcing-step" class="rule-title">Reinforcing Step</h4>
           <p>
-            During this step, players alternate declaring if they will Deploy
-            any squads from their
+            During this step, players alternate declaring if they will
+            <strong>Deploy</strong> any squads from their any squads from their
             <span class="kw" data-term="Reinforcements">reinforcements</span>.
             If on a player&rsquo;s turn, they decline to Deploy a squad from
             their
@@ -1344,7 +1539,11 @@
             <span class="kw" data-term="Action">Action</span> can be taken in
             any phase until they are no longer
             <span class="kw" data-term="Routing">Routing</span>. You may not
-            score objectives, Battlefield or Agenda, with
+            score objectives,
+            <span class="kw" data-term="Battlefield Objective"
+              >Battlefield Objectives</span
+            >
+            or <span class="kw" data-term="Agenda">Agendas</span>, with
             <span class="kw" data-term="Routing">Routing</span> units.
           </p>
           <div class="rule-card">
@@ -1414,25 +1613,29 @@
             Resolution Step
           </h4>
           <p>
-            During this step, if there are any unrevealed Battlefield Objectives
-            remaining, reveal the next objectives and resolve any of its
-            requirements. The
+            During this step, if there are any unrevealed
+            <span class="kw" data-term="Battlefield Objective"
+              >Battlefield Objectives</span
+            >
+            remaining, reveal the next one and resolve any of its requirements.
+          </p>
+          <p>
+            Players gain 1
+            <span class="kw" data-term="Order Points">Order Point</span>, and
+            any additional from <span class="trait">Strategic</span> squads
+          </p>
+          <p>
+            The player who has the least number of squads on the board may
+            decide who gains the
             <span class="kw" data-term="Initiative Token"
               >Initiative Token</span
             >
-            is given to the other player.
-          </p>
-          <h3 id="ending-the-match" class="rule-section">Ending the Match</h3>
-          <p>
-            The match ends upon a player reaching 10
-            <span class="kw" data-term="Victory Points">Victory Points</span>,
-            with that player being the victor of the match. If two players reach
-            10
-            <span class="kw" data-term="Victory Points">Victory Points</span> at
-            the same time, then the match continues until the next time a player
-            would gain
-            <span class="kw" data-term="Victory Points">Victory Points</span> -
-            if this too is simultaneous then the match is a draw.
+            for this round. If both players have the same number of squads, then
+            the
+            <span class="kw" data-term="Initiative Token"
+              >Initiative Token</span
+            >
+            is given to the player currently not holding it.
           </p>
         </div>
         <hr class="section-divider" />
@@ -1957,6 +2160,25 @@
             Reference &mdash; Squad Traits
           </h2>
           <div class="rule-card">
+            <div class="rc-name">Strategic X</div>
+            <div class="rc-body">
+              <p>
+                During the
+                <a class="content-ref" href="#strategic-resolution-step"
+                  >Resolution Step</a
+                >
+                of the
+                <a class="content-ref" href="#strategic-phase"
+                  >Strategic Phase</a
+                >, if a squad with this
+                <span class="kw" data-term="Trait">trait</span> is not
+                <span class="kw" data-term="Routing">Routing</span>, then the
+                controlling player gains X additional
+                <span class="kw" data-term="Order Points">Order Points</span>.
+              </p>
+            </div>
+          </div>
+          <div class="rule-card">
             <div class="rc-name">Sentinel X</div>
             <div class="rc-body">
               <p>
@@ -1993,7 +2215,19 @@
               </p>
             </div>
           </div>
+          <div class="rule-card">
+            <div class="rc-name">Limited</div>
+            <div class="rc-body">
+              <p>
+                This squad can not be used for the purpose of scoring
+                <content class="content-ref" href="#objectives"
+                  >objectives</content
+                >.
+              </p>
+            </div>
+          </div>
         </div>
+        <div class="rule-section"></div>
         <div class="rule-section">
           <h2 id="reference-model-traits" class="section-title">
             Reference &mdash; Model Traits
@@ -2014,6 +2248,19 @@
                 <span class="kw" data-term="Toughness">Toughness</span> of the
                 model to the result, then compare that to the table below.
               </p>
+
+              <p>
+                Additionally, this model automatically passes
+                <span class="kw" data-term="Command Test">Command Tests</span>
+                to <strong>Regroup</strong>.
+              </p>
+
+              <p>
+                This model counts for three models for the purpose of
+                <a class="content-ref" href="#firing-into-melee"
+                  >Firing into Melee</a
+                >.
+              </p>
             </div>
           </div>
           <div class="rule-card">
@@ -2022,7 +2269,7 @@
               <p>
                 Models with the transport
                 <span class="kw" data-term="Trait">trait</span> can have up to X
-                worth of size of models
+                worth of <span class="kw" data-term="Size">size</span> of models
                 <a class="content-ref" href="#transports">Embarked</a> within
                 them, so long as they have at least one of the
                 <span class="kw" data-term="Tag">tags</span> listed in Y&hellip;
@@ -2047,11 +2294,27 @@
               <p>
                 Models with the jump
                 <span class="kw" data-term="Trait">trait</span> may ignore up to
-                X inches of vertical terrain movement when climbing.
+                X inches of vertical
+                <span class="kw" data-term="Terrain">terrain</span>
+                <span class="kw" data-term="Movement">movement</span> when
+                climbing.
               </p>
             </div>
           </div>
         </div>
+        <div class="rule-card">
+          <div class="rc-name">Flying&Prime;</div>
+          <div class="rc-body">
+            <p>
+              Models with the flying
+              <span class="kw" data-term="Trait">trait</span> may make
+              3-dimensional
+              <span class="kw" data-term="Movement">movement</span> as described
+              in the <a class="content-ref" href="#flying">flying</a> section.
+            </p>
+          </div>
+        </div>
+
         <div class="rule-section">
           <h2 id="reference-weapon-traits" class="section-title">
             Reference &mdash; Weapon Traits
