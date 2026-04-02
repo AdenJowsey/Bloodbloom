@@ -17,7 +17,11 @@
   --keyword-border: #2a4a7a;
   --keyword-text: #d5815c;
   --tag-bg: #1e1a2a;
+  --tag-border: #3a2a5a;
   --tag-text: #9a7ad4;
+  --trait-bg: #4b3411;
+  --trait-border: #725028;
+  --trait-text: #d4b77a;
   --nav-w: 280px;
   --toc-w: 220px;
 }
@@ -382,7 +386,23 @@ p {
   text-transform: uppercase;
   color: var(--tag-text);
   background: var(--tag-bg);
-  border: 1px solid #3a2a5a;
+  border: 1px solid var(--tag-border);
+  border-radius: 2px;
+  padding: 1px 6px;
+  margin: 0 2px;
+}
+
+.trait {
+  display: inline-block;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--trait-text);
+  background: var(--trait-bg);
+  border: 1px solid var(--trait-border);
+
   border-radius: 2px;
   padding: 1px 6px;
   margin: 0 2px;

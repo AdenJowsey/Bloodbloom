@@ -20,6 +20,10 @@ const KEYWORDS = {
     body: "A secret objective that can be scored for Victory Points.",
     link: "#agendas",
   },
+  "Battlefield Objective": {
+    body: "A public objective that can be scored for Victory Points; may have requirements.",
+    link: "#battlefield-objectives",
+  },
   Action: {
     body: "A task assigned to an activated squad; all models in the squad perform the same action.",
     link: "#activations",
@@ -45,9 +49,16 @@ const KEYWORDS = {
     body: "Roll 3d6 ≥ Leadership to pass; modified by effects.",
     link: "#command-test",
   },
+  Commander: {
+    body: "Leader of the army; A hero squad nominated during army assembly",
+  },
   Cover: {
     body: "≥50% of a squad has ≥25% obscuration → attackers suffer −1 to hit (ranged).",
     link: "#cover",
+  },
+  "Deployment Zone": {
+    body: "Area extending 6″ from a player’s chosen edge of the battlefield.",
+    link: "#setting-up",
   },
   Endurance: {
     body: "Maximum Wound Markers a model can take before being destroyed.",
@@ -76,7 +87,10 @@ const KEYWORDS = {
     body: "Reactive attack made with −2 to hit, resolved at the most favourable moment.",
     link: "#opportunity-attacks",
   },
-  Obstacle: { body: "Terrain <2″ tall; can be crossed at −2″ Movement cost." },
+  Obstacle: {
+    body: "Terrain <2″ tall; can be crossed at −2″ Movement cost.",
+    link: "#obstacles",
+  },
   link: "#obstacles",
   "Order Points": {
     body: "Resource spent to issue Orders; gained each round, max 5.",
@@ -163,6 +177,9 @@ const KEYWORDS = {
   Requisitions: {
     body: "Destroyed squads can be added to your reinforcements, up to a limit.",
     link: "#requisitions",
+  },
+  Size: {
+    body: "A models effective bulk, used for transport capacity.",
   },
 };
 
