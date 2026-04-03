@@ -45,7 +45,7 @@
           <div class="breadcrumb">Bloodbloom &rsaquo; Rules</div>
           <h1>Core Rules</h1>
           <div class="page-meta">
-            Version 0.1 &nbsp;&middot;&nbsp; Work in Progress
+            Version 0.2 &nbsp;&middot;&nbsp; Work in Progress
           </div>
         </div>
         <!-- TOC -->
@@ -58,25 +58,6 @@
         <div class="rule-section">
           <h2 id="core-concepts" class="section-title">Core Concepts</h2>
           <h3 id="armies" class="subsection-title">Armies</h3>
-          <h4 id="squads" class="rule-title">Squads</h4>
-          <p>
-            Armies in Bloodbloom are broken down into <strong>squads</strong>. A
-            squad represents a single coherent fighting force which acts as one
-            during the course of the battle. Squads are selected for activation
-            together and every model within a squad must take the same
-            <span class="kw" data-term="Action">Action</span>.
-          </p>
-          <p>
-            Squads and models from your army are considered
-            <strong>friendly</strong>; squads and models from another player's
-            army are <strong>opposing</strong>.
-          </p>
-          <p>
-            Squads cost <span class="kw" data-term="Supply">Supply</span> to
-            deploy and maintain into any theatre of war, generally placing a
-            limit to how many you can field in your army.
-          </p>
-
           <h4 id="models" class="rule-title">Models</h4>
           <p>
             <strong>Models</strong> are the individual troops, tanks, and
@@ -87,8 +68,11 @@
             Models generally have a base and a miniature on top of that base.
             The base describes the area the model occupies on the battlefield
             and is used for measurements, while the miniature is used for visual
-            representation and to determine line of sight and cover. A model's
-            base must remain flat and entirely on the battlefield or terrain
+            representation and to determine
+            <span class="kw" data-term="Line of Sight">line of sight</span> and
+            <span class="kw" data-term="Cover">cover</span>. A model's base must
+            remain entirely on the battlefield or
+            <span class="kw" data-term="Terrain">terrain</span>
             surface below it. No model's base can be placed on top of another
             model's base.
           </p>
@@ -112,7 +96,7 @@
             <span class="kw" data-term="Wound Marker">Wound Marker</span>
             penalty it has a
             <span class="kw" data-term="Movement">Movement</span> value of
-            4&Prime;.
+            5&Prime;.
           </div>
           <p>
             Penalties to <span class="kw" data-term="Aim">Aim</span>,
@@ -137,6 +121,25 @@
             determine their effects.
           </div>
 
+          <h4 id="squads" class="rule-title">Squads</h4>
+          <p>
+            Armies in Bloodbloom are broken down into <strong>squads</strong>. A
+            squad represents a single coherent fighting force which acts as one
+            during the course of the battle. Squads are selected for activation
+            together and every model within a squad must take the same
+            <span class="kw" data-term="Action">Action</span>.
+          </p>
+          <p>
+            Squads and models from your army are considered
+            <strong>friendly</strong>; squads and models from another player's
+            army are <strong>opposing</strong>.
+          </p>
+          <p>
+            Squads cost <span class="kw" data-term="Supply">Supply</span> to
+            deploy and maintain into any theatre of war, generally placing a
+            limit to how many you can field in your army.
+          </p>
+
           <h4 id="heroes" class="rule-title">Heroes</h4>
           <p>
             <strong>Heroes</strong> are the champions, leaders, and specialist
@@ -145,8 +148,8 @@
             can shape a battlefield.
           </p>
           <p>
-            Heroes blur the line of squads, going where they please, when they
-            please. During the
+            Heroes blur the lines of squads and individual models, going where
+            they please, when they please. During the
             <a class="content-ref" href="#movement-phase">Movement Phase</a> of
             a combat round, a Hero may join with a squad to lead it, this is
             done by moving the Hero to within
@@ -182,7 +185,8 @@
           </p>
           <div class="callout note">
             <div class="callout-label">Note</div>
-            If a Hero is leading a squad, add a <strong>+2 bonus</strong> to any
+            If a <span class="kw" data-term="Hero">Hero</span> is leading a
+            squad, add a <strong>+2 bonus</strong> to any
             <span class="kw" data-term="Command Test">Command Tests</span> the
             squad makes.
           </div>
@@ -277,7 +281,7 @@
             A targeted squad is said to have <strong>Cover</strong> against a
             given model if the majority (greater than or equal to 50%) of the
             models in the targeted squad each have at least 25% of their model
-            obscured by terrain.
+            obscured by <span class="kw" data-term="Terrain">terrain</span>.
           </p>
           <p>
             If a squad has Cover against an attacking model, then
@@ -306,12 +310,20 @@
           <h4 id="area-terrain" class="rule-title">Terrain Area</h4>
 
           <p>
-            Some pieces of terrain, such as forrests or buildings, come with
+            Some pieces of terrain, such as forests or buildings, come with
             bases that describe the area that the terrain should occupy. While a
             model is wholly within the area of a piece of terrain it is always
             considered to be obscured for the purposes
             <span class="kw" data-term="Cover">cover</span> against any attacker
             not also wholly within that piece of terrain.
+          </p>
+
+          <p>
+            Additionally, attackers drawing
+            <span class="kw" data-term="Line of Sight">Line of Sight</span> that
+            would pass over (crossing two edges) the base of a piece of terrain
+            are considered to be obstructed for the purposes of
+            <span class="kw" data-term="Cover">cover</span>.
           </p>
         </div>
         <hr class="section-divider" />
@@ -323,7 +335,7 @@
           <p>
             A match of Bloodbloom is played until one player has achieved enough
             <span class="kw" data-term="Victory Points">Victory Points</span> to
-            win the match.
+            be declared the victor.
             <span class="kw" data-term="Victory Points">Victory Points</span>
             are generally gained by completing <strong>Objectives</strong>.
             There are two main types of Objectives:
@@ -373,6 +385,7 @@
             <span class="kw" data-term="Victory Points">Victory Points</span>,
             and each Agenda can only be scored once. Agendas are hidden
             information, only revealed to your opponent when they are scored.
+            However.
           </p>
         </div>
         <hr class="section-divider" />
@@ -384,22 +397,26 @@
           <p>
             Well timed orders can turn the tide of battle, inspiring soldiers to
             go above and beyond their call of duty. <strong>Orders</strong> are
-            special <span class="kw" data-term="Action">actions</span> that the
-            Players make. There is no limit to the number of times an Order can
-            be played, but Players do have a finite amount of
-            <strong>Order Points (OP)</strong> to spend each Round.
+            special <span class="kw" data-term="Action">actions</span> that
+            players make. There is no limit to the number of times an Order can
+            be played, but players do have a finite amount of
+            <strong>Order Points (OP)</strong> to spend each round.
           </p>
           <h3 id="order-points" class="rule-title">Order Points</h3>
           <p>
             <strong>Order Points</strong> are gained each round based on the
-            number of strategic squads still standing on the battlefield. These
-            squads tend to be less effective at direct combat but offer the
-            player advantage through being able to perform more tactical orders.
+            number of <span class="trait"> strategic</span> squads still
+            standing on the battlefield. These squads tend to be less effective
+            at direct combat but offer the player advantage through being able
+            to perform more tactical orders.
           </p>
           <p>
-            At the start of each round, you gain 1
-            <span class="kw" data-term="Order Points">Order Point</span>. At any
-            given time you may have up to 5
+            Players start the game with 1
+            <span class="kw" data-term="Order Points">Order Point</span> and
+            gain more during each
+            <a class="content-ref" href="#strategic-resolution-phase"
+              >Strategic Phase</a
+            >. At any given time you may have up to 5
             <span class="kw" data-term="Order Points">Order Points</span>, any
             generated past this are lost.
           </p>
@@ -522,27 +539,35 @@
           </p>
           <p>
             Once selected for activation, the squad must be assigned a relevant
-            action from the phase (or other valid source) that they meet the
-            requirements for. An Activation Token should be placed next to the
-            squad after it has concluded its selected Action, unless told
-            otherwise.
+            <span class="kw" data-term="Action">action</span> from the phase (or
+            other valid source) that they meet the requirements for. An
+            <span class="kw" data-term="Activation Token"
+              >Activation Token</span
+            >
+            should be placed next to the squad after it has concluded its
+            selected <span class="kw" data-term="Action">action</span>, unless
+            told otherwise.
           </p>
           <p>
             An activated squad may never be selected again for activation until
-            it has first removed its current Activation Token and thus been
-            readied.
+            it has first removed its current
+            <span class="kw" data-term="Activation Token"
+              >Activation Token</span
+            >
+            and thus been readied.
           </p>
           <h3 id="instant-actions" class="section-title">Instant Actions</h3>
           <p>
-            Instant Actions are the most straightforward type of action,
-            generally having view requirements and being resolved immediately.
+            <strong>Instant Actions</strong> are the most straightforward type
+            of <span class="kw" data-term="Action">action</span>, generally
+            having few requirements and being resolved immediately.
           </p>
           <h3 id="prepare-actions" class="section-title">Prepare Actions</h3>
           <p>
-            Unlike Instant Actions, Prepare Actions generally do not resolve
-            their effect immediately, but instead set a squad up to complete
-            something at a later point in the round. This will often be to their
-            advantage if what they prepare for comes to fruition.
+            Unlike Instant Actions, <strong>Prepare Actions</strong> generally
+            do not resolve their effect immediately, but instead set a squad up
+            to complete something at a later point in the round. This will often
+            be to their advantage if what they prepare for comes to fruition.
           </p>
           <p>
             Prepare Actions will often come with a
@@ -556,8 +581,9 @@
           <h4 id="interruptible" class="rule-title">Interruptible</h4>
           <p>
             Many Prepare Actions require concentration from the squad and are
-            therefore interruptible by the opponent. If a squad is performing an
-            Interruptible Prepare Action and they are targeted by a
+            therefore <strong>interruptible</strong> by the opponent. If a squad
+            is performing an Interruptible Prepare Action and they are targeted
+            by a
             <span class="kw" data-term="Ranged Attack">Ranged Attack</span>,
             then after the attack is concluded, the squad must make a
             <span class="kw" data-term="Command Test">Command Test</span> with a
@@ -572,34 +598,37 @@
           </p>
           <h3 id="reactions" class="section-title">Reactions</h3>
           <p>
-            Reactions can only be done in response to a trigger. A reaction is
-            different from the other two action types as they can be declared on
-            another player&rsquo;s turn. Reactions have two additional
-            descriptions, a <em>trigger</em> and a <em>timing</em>.
+            <strong>Reactions</strong> can only be done in response to a
+            trigger. A reaction is different from the other two
+            <span class="kw" data-term="Action">action</span> types as they can
+            be declared on another player&rsquo;s turn. Reactions have two
+            additional descriptions, a <strong>trigger</strong> and a
+            <strong>timing</strong>.
           </p>
           <p>
             The <strong>trigger</strong> specifies when the reaction may be
             declared, generally it will be after an opposing squad does
-            something, in which case that squad is the triggering squad.
-            Generally, if you do something that may give your opponent an
+            something, in which case that squad is the triggering squad. As good
+            practice, if you do something that may give your opponent an
             opportunity to use a Reaction, you should give them time to declare
             it.
           </p>
           <p>
             The <strong>timing</strong> specifies when the reaction should be
             resolved. Generally, this will be immediately after the triggering
-            Action has been concluded, but sometimes it may vary. Once the
-            Reaction has been declared, the squad is considered activated even
-            before the Reaction is resolved (and as such can not be used for
-            another Reaction).
+            <span class="kw" data-term="Action">action</span> has been
+            concluded, but sometimes it may vary. Once the Reaction has been
+            declared, the squad is considered activated even before the Reaction
+            is resolved (and as such can not be used for another Reaction).
           </p>
           <h3 id="movement" class="subsection-title">Movement</h3>
           <p>
             When a model is instructed to move, you may move it in a series of
-            unobstructed straight lines. A model may not move through terrain or
-            other models that are not in its squad unless otherwise specified.
+            unobstructed horizontal straight lines. A model may not move through
+            terrain or other models that are not in its squad unless otherwise
+            specified.
           </p>
-          <h4 id="pivots" class="rule-title">Pivots</h4>
+          <h4 id="rotations" class="rule-title">Rotations</h4>
           <p>
             Models that do not have circular bases may rotate during their
             movement, however each rotation lowers their Movement value by
@@ -624,8 +653,9 @@
           <h4 id="obstacles" class="rule-title">Obstacles</h4>
           <p>
             <span class="kw" data-term="Terrain">Terrains</span> vertically
-            smaller than 2&rdquo; tall are considered Obstacles, and may be
-            moved through by models at the cost of lowering their
+            smaller than 2&rdquo; tall are considered
+            <strong>Obstacles</strong>, and may be moved through by models at
+            the cost of lowering their
             <span class="kw" data-term="Movement">Movement</span>
             value by 2&rdquo; for the duration of that movement.
           </p>
@@ -644,8 +674,8 @@
 
           <h3 id="command-test" class="subsection-title">Command Test</h3>
           <p>
-            When a squad is instructed to make a Command Test, you must roll 3d6
-            and compare the result to its
+            When a squad is instructed to make a <strong>Command Test</strong>,
+            you must roll 3d6 and compare the result to its
             <span class="kw" data-term="Leadership">Leadership</span> value,
             adding any bonuses or penalties. If the final result is larger than
             or equal to the squad&rsquo;s
@@ -657,13 +687,15 @@
           <table class="rule-table">
             <thead>
               <tr>
-                <th>Modifier</th>
+                <th>Common Modifiers</th>
                 <th>Effect</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Unwounded <span class="tag">Sergeant</span> in squad</td>
+                <td>
+                  Unwounded <span class="tag">Sergeant</span> model in squad
+                </td>
                 <td>+1 to Command Tests</td>
               </tr>
               <tr>
@@ -686,9 +718,13 @@
           <p>
             Before starting a match, players must first decide on the
             <span class="kw" data-term="Supply Limit">Supply Limit</span> of the
-            battle. Higher Supply Limits allow for larger armies, and thus
-            longer and more complex battles, while lower Supply Limits lead to
-            smaller armies and quicker matches. Once the Supply Limit is
+            battle. Higher
+            <span class="kw" data-term="Supply Limit">Supply Limits</span> allow
+            for larger armies, and thus longer and more complex battles, while
+            lower
+            <span class="kw" data-term="Supply Limit">Supply Limits</span> lead
+            to smaller armies and quicker matches. Once the
+            <span class="kw" data-term="Supply Limit">Supply Limit</span> is
             decided, players then pick a <strong>faction</strong>.
           </p>
 
@@ -697,7 +733,7 @@
             <span class="kw" data-term="Orders">Orders</span>, and
             <span class="kw" data-term="Agendas">Agendas</span> available to
             them. A player may add any squads avaiable to their faction into
-            their army, selecting any specifics weapons or equipment, so long as
+            their army, selecting any specific weapons or equipment, so long as
             the total <span class="kw" data-term="Supply">Supply Cost</span> of
             their army does not exceed the agreed upon
             <span class="kw" data-term="Supply Limit">Supply Limit</span>.
@@ -707,7 +743,7 @@
             Additionally, any army created must adhere to the following two
             constraints:
           </p>
-          <ul>
+          <ul class="list">
             <li>
               At least half of the squads in an army must have the
               <span class="tag">Core</span>
@@ -740,11 +776,15 @@
             through a mix of tall and short
             <span class="kw" data-term="Terrain">Terrain</span> pieces. Leaving
             large open areas of the battlefield is generally not recommended, as
-            it can lead to less interesting matches. Additionally, unpassable
-            <span class="kw" data-term="Terrain">terrain</span> should be placed
-            in such a way to leave multiple viable paths across the battlefield,
-            and not to create any chokepoints that would be too advantageous for
-            one player to control.
+            it can lead to less interesting matches.
+          </p>
+          <p>
+            Additionally, unpassable
+            <span class="kw" data-term="Terrain">terrain</span> (vertically
+            taller than 2") should be placed in such a way to leave multiple
+            viable paths across the battlefield, and not to create any
+            chokepoints that would be too advantageous for one player to
+            control.
           </p>
 
           <p>
@@ -758,10 +798,10 @@
             Finally, players should choose opposite edges of the battlefield to
             deploy on. If one player set up most of the
             <span class="kw" data-term="Terrain">terrain</span>, then the other
-            player should choose which edge to deploy on, otherwise, players can
-            roll a d6 and the highest roller may choose which side to deploy on.
-            Their
-            <span class="kw" data-term="Deployment Zone">Deployment Zone</span>
+            player should choose which edge to deploy on, alternatively, players
+            can roll a d6 and the highest roller may choose which edge to deploy
+            on. That players
+            <span class="kw" data-term="Deployment Area">Deployment Area</span>
             extends 6&rdquo; from their edge of the battlefield.
           </p>
 
@@ -774,9 +814,9 @@
               >Battlefield Objective</span
             >
             deck and draw out 4 objectives, facedown, near the battlefield.
-            Then, flip over the first of the four. Immediately place any of the
-            objectives requirements or markers on the battlefield as necessary.
-            This is the first
+            Then, flip over the first. Immediately place any of the objectives
+            requirements or markers on the battlefield as necessary. This is the
+            first <em>and narratively primary</em>
             <span class="kw" data-term="Battlefield Objective"
               >Battlefield Objective</span
             >.
@@ -784,13 +824,16 @@
           <p>
             After this, players shuffle and draw 3
             <span class="kw" data-term="Agenda">Agenda</span> cards each from
-            their own decks and discard 1 of their choice.
+            their own decks and discard 1 of their choice. The two kept are the
+            players hidden objectives for the match.
           </p>
 
           <p>
             Alternatively, should the players agree beforehand, they may choose
-            to use a preset scenario with predefined objectives and deployment
-            zones.
+            to use a preset scenario with predefined objectives (and potentially
+            other factors such as
+            <span class="kw" data-term="Deployment Area">deployment areas</span>
+            or <span class="kw" data-term="Terrain">terrain</span> placement).
           </p>
           <h3 id="deployment" class="subsection-title">Deployment</h3>
           <p>
@@ -825,8 +868,8 @@
               <p>
                 Each model in the squad is placed on to the battlefield wholly
                 within the controlling player&rsquo;s
-                <span class="kw" data-term="Deployment Zone"
-                  >Deployment Zone</span
+                <span class="kw" data-term="Deployment Area"
+                  >Deployment Area</span
                 >. A model must be placed
                 <span class="kw" data-term="Cohesion">cohesively</span> with the
                 rest of its squad, and may not be placed within
@@ -867,18 +910,25 @@
             <span class="kw" data-term="Victory Points">Victory Points</span> -
             if this too is simultaneous then the match is a draw.
           </p>
-
+        </div>
+        <hr class="section-divider" />
+        <!-- ════════════════════════════════════════
+       SECTION 5 — ORDER OF PLAY
+  ════════════════════════════════════════ -->
+        <div class="rule-section">
           <h2 id="rounds" class="section-title">Rounds</h2>
           <p>
             Rounds in Bloombloom are played through in sequential phases. Phases
-            are often into step Activations, and Resolutions. Starting with the
-            Activation Step, players take alternating turns activating their
-            squads, beginning with the player with the
+            are often split into steps such as 'Activation Step' or 'Resolution
+            Step', these define the order in which phases should be resolved.
+          </p>
+          <p>
+            During an <strong>Activation Step</strong>, players take alternating
+            turns activating their squads, beginning with the player with the
             <span class="kw" data-term="Initiative Token">Initiative Token</span
-            >. In each phase, unless told otherwise, players activate a single
-            squad and resolve an
-            <span class="kw" data-term="Action">Action</span> before then
-            letting the turn pass to the other player.
+            >. On a player's turn, they activate a single squad and resolve an
+            <span class="kw" data-term="Action">Action</span> for them, before
+            then letting the turn pass to the other player.
           </p>
           <p>
             Players continue alternatively activating squads until they have no
@@ -888,16 +938,19 @@
           </p>
           <p>
             Once both players have activated all of their squads, the phase
-            moves into the Resolution Step, where any unresolved outcomes (Such
-            as <span class="kw" data-term="Hit Marker">Hit Markers</span>) of
-            the previous step may be applied. Once all unresolved outcomes have
-            been settled, players may ready their squads by removing their
+            moves into the next step, often a 'Resolution Step' where any
+            unresolved outcomes (Such as
+            <span class="kw" data-term="Hit Marker">Hit Markers</span>) of the
+            previous step may be applied. At the end of a phase, players may
+            ready their squads by removing an
             <span class="kw" data-term="Activation Token"
-              >Activation Tokens</span
+              >Activation Token</span
             >
-            and proceeding to the next phase. If, at the end of a round, no
-            player has won yet, then a new round begins starting from the
-            Movement Phase.
+            from them.
+          </p>
+          <p>
+            If at the end of a round, no player has won yet, then a new round
+            begins starting from the Movement Phase.
           </p>
           <!-- MOVEMENT PHASE -->
           <h3 id="movement-phase" class="subsection-title">Movement Phase</h3>
@@ -1032,8 +1085,7 @@
             In the Deployment Phase,
             <span class="kw" data-term="Reinforcements">reinforcements</span>
             flood into the battlefield and troops ready themselves into or from
-            transports. Squads are not activated in this phase and players take
-            turns going through the Embarking Step then the Reinforcing Step.
+            transports. Squads are not activated in this phase.
           </p>
           <h4 id="embarking-step" class="rule-title">Embarking Step</h4>
           <p>
@@ -1041,7 +1093,8 @@
             <strong>Embark</strong> or <strong>Disembark</strong> any squads
             from transports. If on a player&rsquo;s turn, they decline to either
             Embark or Disembark, then they are considered to have passed for
-            this step. Once both players are passed move onto the next step.
+            this step and may no longer declare any actions. Once both players
+            are passed move onto the next step.
           </p>
           <h4 id="transports" class="rule-title">Transports</h4>
           <p>
@@ -1057,12 +1110,12 @@
           <p>
             A given transport will have a list of
             <span class="kw" data-term="Tag">tags</span> and a capacity. The
-            transport may only contain a number of models whose combined
-            <span class="kw" data-term="Size">sizes</span> add up to its
-            capacity. A model can only Embark into a transport if it has at
-            least one of the
-            <span class="kw" data-term="Tag">tags</span> specified and if their
-            entire squad can also Embark.
+            capacity represents the total combined sizes of models that can be
+            stored within the transport; a squad can only Embark into a
+            transport if doing so would not take it over capacity. Additionally,
+            a model can only Embark into a transport if it has at least one of
+            the <span class="kw" data-term="Tag">tags</span> specified and if
+            their entire squad can also Embark.
           </p>
           <p>
             A given squad can either Embark or Disembark in the Embarking Step
@@ -1137,8 +1190,9 @@
             If on a player&rsquo;s turn, they decline to Deploy a squad from
             their
             <span class="kw" data-term="Reinforcements">reinforcements</span>,
-            then they are considered to have passed for this step. Once both
-            players are passed move onto the next phase.
+            then they are considered to have passed for this step, then they are
+            considered to have passed for this step and may no longer declare
+            any actions. Once both players are passed move onto the next phase.
           </p>
           <h4 id="deployment-resolution-step" class="rule-title">
             Resolution Step
@@ -1189,7 +1243,7 @@
           </div>
           <div class="rule-card">
             <div class="rc-name">
-              Strike! <span class="rc-type instant">Instant</span>
+              Engage! <span class="rc-type instant">Instant</span>
             </div>
             <div class="rc-meta">
               <strong>Requirements:</strong> The activated squad must be
@@ -1263,7 +1317,7 @@
                 <span class="kw" data-term="Activation Token"
                   >Activation Token</span
                 >
-                and then take the Strike!
+                and then take the Engage!
                 <span class="kw" data-term="Action">action</span> with a +1 to
                 hit bonus.
               </p>
@@ -1323,13 +1377,14 @@
             </div>
             <div class="callout note">
               <div class="callout-label">Note</div>
-              The <span class="kw" data-term="Snapshot">Snapshot</span>
+              The <strong>Snapshot</strong>
               <span class="kw" data-term="Reaction">reaction</span> may be made
-              even if the triggering squad&rsquo;s movement results in the
-              activated squad becoming
+              even if the triggering squad&rsquo;s
+              <span class="kw" data-term="Movement">movement</span> results in
+              the activated squad becoming
               <span class="kw" data-term="Locked-in-Combat"
                 >Locked-in-Combat</span
-              >. See the <span class="kw" data-term="Snapshot">Snapshot</span>
+              >. See the <strong>Snapshot</strong>
               <span class="kw" data-term="Reaction">reaction</span>&rsquo;s
               notes for more details.
             </div>
@@ -1341,7 +1396,9 @@
             </div>
             <div class="rc-meta">
               <strong>Requirements:</strong> The activated squad must be wholly
-              within your deployment area.
+              within your
+              <span class="kw" data-term="Deployment Area">deployment area</span
+              >.
             </div>
             <div class="rc-body">
               <p>
@@ -1356,8 +1413,10 @@
                   >Resolution Step</span
                 >
                 of this phase, if this squad is still wholly within your
-                deployment area, you may remove any remaining models. You may
-                add these models as a new squad into your
+                <span class="kw" data-term="Deployment Area"
+                  >deployment area</span
+                >, you may remove any remaining models. You may add these models
+                as a new squad into your
                 <span class="kw" data-term="Reinforcements"
                   >reinforcements</span
                 >
@@ -1427,8 +1486,7 @@
               Defend <span class="rc-type reaction">Reaction</span>
             </div>
             <div class="rc-meta">
-              <strong>Trigger:</strong> An opposing squad
-              <span class="kw" data-term="Dash">Dashes</span> into
+              <strong>Trigger:</strong> An opposing squad Dashes into
               <span class="kw" data-term="Close-Combat Range"
                 >Close-Combat range</span
               >
@@ -1475,7 +1533,8 @@
                 <span class="kw" data-term="Ranged Attack">Ranged Attack</span>,
                 then the opposing model gains a -1 to hit ranged penalty, in
                 addition to that provided by the
-                <span class="kw" data-term="Cover">cover</span>.
+                <span class="kw" data-term="Cover">cover</span> (totalling to a
+                &minus;2 penalty).
               </p>
             </div>
           </div>
@@ -1520,7 +1579,7 @@
             the course of this round, then compare the number of unwounded
             models to the number of wounds generated this round. If the number
             of
-            <span class="kw" data-term="Wound Marker">Wounds Markers</span>
+            <span class="kw" data-term="Wound Marker">Wound Markers</span>
             generated is equal to or larger than the number of unwounded models,
             the squad must make a
             <span class="kw" data-term="Command Test">Command Test</span>, with
@@ -1535,7 +1594,9 @@
             <span class="kw" data-term="Routing">Routing</span>. They gain a new
             <span class="kw" data-term="Action">Action</span>:
             <span class="kw" data-term="Rout">Rout</span>, usable in the
-            Movement and Engagement Phase, and no other
+            <a class="content-ref" href="#movement-phase">Movement</a> and
+            <a class="content-ref" href="#engagement-phase">Engagement Phase</a
+            >, and no other
             <span class="kw" data-term="Action">Action</span> can be taken in
             any phase until they are no longer
             <span class="kw" data-term="Routing">Routing</span>. You may not
@@ -1560,8 +1621,10 @@
                 <span class="kw" data-term="Movement">movement</span> of its
                 <span class="kw" data-term="Movement">movement</span> value in
                 inches, taking the shortest path towards the board&rsquo;s edge
-                in the controlling player&rsquo;s deployment area. No model in
-                the squad may come within
+                in the controlling player&rsquo;s
+                <span class="kw" data-term="Deployment Area"
+                  >deployment area</span
+                >. No model in the squad may come within
                 <span class="kw" data-term="Close-Combat Range"
                   >Close-Combat range</span
                 >
@@ -1569,9 +1632,13 @@
                 not possible, remove the model.
               </p>
               <p>
-                After finishing this movement, if the squad is wholly within the
-                controlling player&rsquo;s deployment area, remove the squad -
-                it is destroyed. Otherwise, the squad makes a
+                After finishing this
+                <span class="kw" data-term="Movement">movement</span>, if the
+                squad is wholly within the controlling player&rsquo;s
+                <span class="kw" data-term="Deployment Area"
+                  >deployment area</span
+                >, remove the squad - it is destroyed. Otherwise, the squad
+                makes a
                 <span class="kw" data-term="Command Test">Command Test</span>.
                 If it passes, the squad is no longer
                 <span class="kw" data-term="Routing">Routing</span>.
@@ -1607,7 +1674,10 @@
           <h4 id="agenda-step" class="rule-section">Agenda Step</h4>
           <p>
             During this step, players may declare if they have scored any
-            Agendas this Round.
+            <span class="kw" data-term="Agendas">Agendas</span> this Round.
+            Players can not hold on to
+            <span class="kw" data-term="Agendas">Agendas</span> that are
+            eligible to be scored, and must score them during this step.
           </p>
           <h4 id="strategic-resolution-step" class="rule-section">
             Resolution Step
@@ -1630,8 +1700,8 @@
             <span class="kw" data-term="Initiative Token"
               >Initiative Token</span
             >
-            for this round. If both players have the same number of squads, then
-            the
+            for the next round. If both players have the same number of squads,
+            then the
             <span class="kw" data-term="Initiative Token"
               >Initiative Token</span
             >
@@ -1661,10 +1731,11 @@
             <span class="kw" data-term="Close-Combat Range"
               >Close-Combat range</span
             >
-            with an opposing model it may first move up to 3&rdquo; towards one.
-            It then selects a single melee weapon that it is equipped with, and
-            selects a target opposing squad that is both visible to the model
-            and within
+            with an opposing model it may first move up to 3&rdquo; towards one,
+            otherwise it may move up to 1&rdquo; closer to the closest opposing
+            model. It then selects a single melee weapon that it is equipped
+            with, and selects a target opposing squad that is both visible to
+            the model and within
             <span class="kw" data-term="Close-Combat Range"
               >Close-Combat range</span
             >. It then performs an attack using the Combat Sequence below.
@@ -1693,11 +1764,15 @@
               </tr>
             </tbody>
           </table>
+          <h4 class="rule-title" id="sweeping-attacks">Sweeping Attacks</h4>
           <p>
-            When selecting a melee weapon, the model may choose to make Sweeping
-            Attacks. If this is done, double the number of attacks the weapon
-            makes but lower its Penetration and Stopping Powers by 1 step for
-            the duration of this attack.
+            When selecting a melee weapon during a
+            <span class="kw" data-term="Melee Attack">Melee Attack</span>, the
+            model may choose to make <strong> Sweeping Attacks</strong>. If this
+            is done, double the number of attacks the weapon makes but lower its
+            <span class="kw" data-term="Pierce Rating">Pierce Rating</span> and
+            <span class="kw" data-term="Stopping Power">Stopping Power</span> by
+            1 step for the duration of this attack.
           </p>
           <h3 id="opportunity-attacks" class="section-title">
             Opportunity Attacks
@@ -1986,7 +2061,9 @@
             <span class="kw" data-term="Pierce Rating">Pierce Rating</span> is
             equal to or less than the
             <span class="kw" data-term="Armour Rating">Armour Rating</span>,
-            then the Stopping Power value of the attack is lowered by 1.
+            then the
+            <span class="kw" data-term="Stopping Power">Stopping Power</span>
+            value of the attack is lowered by 1.
           </p>
           <p>
             Otherwise, for every 2 steps that the
@@ -2105,7 +2182,7 @@
             </tbody>
           </table>
           <p>
-            If a wound is generated, then a
+            If the roll equals or surpasses the wound threshold, then a
             <span class="kw" data-term="Wound Marker">Wound Marker</span> is
             placed against the allocated model. If a model ever has as many (or
             more)
@@ -2113,15 +2190,19 @@
             their <span class="kw" data-term="Endurance">Endurance</span> value,
             then the model is destroyed and removed from the squad.
           </p>
+
+          <div class="callout note">
+            <div class="callout-label">Note</div>
+            If
+            <span class="kw" data-term="Wound Marker">Wound Markers</span> are
+            generated from sources other than combat against a squad, they are
+            still allocated to individual models as above.
+          </div>
+
           <p>
-            A successful wound places a
-            <span class="kw" data-term="Wound Marker">Wound Marker</span> on the
-            model. When
-            <span class="kw" data-term="Wound Marker">Wound Markers</span> &ge;
-            <span class="kw" data-term="Endurance">Endurance</span> the model is
-            destroyed. Each
+            Each
             <span class="kw" data-term="Wound Marker">Wound Marker</span>
-            applies:
+            against a model applies:
           </p>
           <ul
             style="
@@ -2131,12 +2212,13 @@
             "
           >
             <li style="margin-bottom: 6px">
-              &minus;1 to <span class="kw" data-term="Aim">Aim</span> and
+              &minus;1 penalty to
+              <span class="kw" data-term="Aim">Aim</span> and
               <span class="kw" data-term="Prowess">Prowess</span> values
               (stacking).
             </li>
             <li style="margin-bottom: 6px">
-              &minus;2&Prime; to
+              &minus;1&Prime; penalty to
               <span class="kw" data-term="Movement">Movement</span> value
               (stacking).
             </li>
@@ -2184,10 +2266,11 @@
               <p>
                 A squad with this
                 <span class="kw" data-term="Trait">trait</span> may make an
-                additional X Snapshot
+                additional X <strong> Snapshot</strong>
                 <span class="kw" data-term="Reaction">reactions</span> when
-                taking the Overwatch action before replacing the Overwatch
-                Marker with an
+                taking the <strong> Overwatch</strong>
+                <span class="kw" data-term="Action">action</span> before
+                replacing the Overwatch Marker with an
                 <span class="kw" data-term="Activation Token"
                   >Activation Token</span
                 >. (It is recommended that X+1 Overwatch Markers be placed next
@@ -2202,8 +2285,9 @@
                 After an opposing squad finishes a movement within X inches of a
                 squad with this
                 <span class="kw" data-term="Trait">trait</span> that has taken
-                the Ready Blades action (And still has the Readied Marker), if
-                this squad is not
+                the <strong>Ready Blades</strong>
+                <span class="kw" data-term="Action">action</span> (And still has
+                the Readied Marker), if this squad is not
                 <span class="kw" data-term="Locked-in-Combat"
                   >Locked-in-Combat</span
                 >, you may move each model up to X inches, so long as at least
@@ -2371,8 +2455,10 @@
                 extra scored hit.
               </p>
               <p>
-                When Firing into Melee, also roll a d6 for each model in a
-                friendly squad that is
+                When
+                <a class="content-ref" href="#firing-into-melee"
+                  >Firing into Melee</a
+                >, also roll a d6 for each model in a friendly squad that is
                 <span class="kw" data-term="Locked-in-Combat"
                   >Locked-in-Combat</span
                 >
@@ -2423,13 +2509,20 @@
               <p>
                 Attacks with this weapon can target squads that the bearer does
                 not have
-                <span class="kw" data-term="Line of Sight">line of sight</span>
+                <span class="kw" data-term="Line of Sight">Line of Sight</span>
                 to, so long as at least one model in the controlling
                 player&rsquo;s army does have
-                <span class="kw" data-term="Line of Sight">line of sight</span>
-                on that squad. Attacks made this way are at a -2 to hit penalty
-                and the target squad is always presumed to have
+                <span class="kw" data-term="Line of Sight">Line of Sight</span>
+                on that squad. Attacks made this way are at a -1 to hit penalty.
+              </p>
+              <p>
+                If the majority (50% or more) of the target squad is wholly
+                within
+                <a class="content-ref" href="#area-terrain">Terrain Area</a>,
+                then the attack suffers a -2 to hit penalty instead, and the
+                target squad is presumed to have
                 <span class="kw" data-term="Cover">cover</span>, though the
+                <span class="kw" data-term="Cover">cover</span>
                 penalty is already included in the -2 to hit.
               </p>
             </div>
@@ -2462,7 +2555,7 @@
               <p>
                 Attacks made by this weapon do not suffer a penalty against
                 targets in <span class="kw" data-term="Cover">cover</span> (or
-                hunkered down).
+                <strong>Hunkered Down</strong>).
               </p>
             </div>
           </div>

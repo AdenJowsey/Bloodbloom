@@ -56,7 +56,7 @@ const KEYWORDS = {
     body: "≥50% of a squad has ≥25% obscuration → attackers suffer −1 to hit (ranged).",
     link: "#cover",
   },
-  "Deployment Zone": {
+  "Deployment Area": {
     body: "Area extending 6″ from a player’s chosen edge of the battlefield.",
     link: "#setting-up",
   },

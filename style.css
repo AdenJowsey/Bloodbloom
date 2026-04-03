@@ -243,6 +243,10 @@ p {
   transition: color 0.1s;
 }
 
+.list {
+  list-style: inside;
+}
+
 /* ── RULE CARDS (Orders / Actions) ── */
 .rule-card {
   background: var(--bg-card);
