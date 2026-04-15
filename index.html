@@ -10,11 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="topnav.js" defer></script>
     <script src="keywords.js" defer></script>
     <script src="script.js" defer></script>
   </head>
-  <body>
-    <p>&nbsp;</p>
+  <body data-current-page="index.html">
+    <nav id="topnav"></nav>
+
     <!-- ══════════════════════════════════════════
      SIDEBAR
 ══════════════════════════════════════════ -->
@@ -102,7 +104,7 @@
             Penalties to <span class="kw" data-term="Aim">Aim</span>,
             <span class="kw" data-term="Prowess">Prowess</span>, and
             <span class="kw" data-term="Leadership">Leadership</span>
-            <span class="kw" data-term="Values">values</span>
+            <span class="kw" data-term="Value">values</span>
             <em>increase</em> the threshold (e.g. a &minus;2 penalty to a 3+
             <span class="kw" data-term="Aim">Aim</span> results in a 5+
             <span class="kw" data-term="Aim">Aim</span>). Bonuses decrease it.
@@ -730,8 +732,8 @@
 
           <p>
             Each faction has a specific set of squads, abilities,
-            <span class="kw" data-term="Orders">Orders</span>, and
-            <span class="kw" data-term="Agendas">Agendas</span> available to
+            <span class="kw" data-term="Order">Orders</span>, and
+            <span class="kw" data-term="Agenda">Agendas</span> available to
             them. A player may add any squads avaiable to their faction into
             their army, selecting any specific weapons or equipment, so long as
             the total <span class="kw" data-term="Supply">Supply Cost</span> of
@@ -1359,12 +1361,12 @@
                 and the squad counts as being activated this step. While the
                 squad has this Overwatch Marker, at any point before the end of
                 the phase, the squad may also take the
-                <span class="kw" data-term="Snapshot">Snapshot</span>
+                <strong>Snapshot</strong>
                 <span class="kw" data-term="Reaction">reaction</span>, though it
                 makes a normal
                 <span class="kw" data-term="Ranged Attack">Ranged Attack</span>
                 instead of a
-                <span class="kw" data-term="Ranged Opportunity Attack"
+                <span class="kw" data-term="Opportunity Attack"
                   >Ranged Opportunity Attack</span
                 >, while resolving that
                 <span class="kw" data-term="Reaction">reaction</span>. If this
@@ -1674,10 +1676,10 @@
           <h4 id="agenda-step" class="rule-section">Agenda Step</h4>
           <p>
             During this step, players may declare if they have scored any
-            <span class="kw" data-term="Agendas">Agendas</span> this Round.
+            <span class="kw" data-term="Agenda">Agendas</span> this Round.
             Players can not hold on to
-            <span class="kw" data-term="Agendas">Agendas</span> that are
-            eligible to be scored, and must score them during this step.
+            <span class="kw" data-term="Agenda">Agendas</span> that are eligible
+            to be scored, and must score them during this step.
           </p>
           <h4 id="strategic-resolution-step" class="rule-section">
             Resolution Step
